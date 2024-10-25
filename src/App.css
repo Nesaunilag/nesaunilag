@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600,400,700,italic|Cormorant+Garamond:700|Lato:400");
+      @font-face {
+        font-family: "Neue Haas Grotesk Text Pro-65Medium";
+        src: url("https://anima-uploads.s3.amazonaws.com/projects/601d5748f1e2d6422d0d0d38/fonts/neuehaasgrotdisp-65medium.otf")
+          format("opentype");
+      }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+      @font-face {
+        font-family: "Neue Haas Grotesk Text Pro-75Bold";
+        src: url("https://anima-uploads.s3.amazonaws.com/projects/60570718477be2ef894ed429/fonts/nhaasgrotesktxpro-75bd.ttf")
+          format("truetype");
+      }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+      @font-face {
+        font-family: "Neue Haas Grotesk Text Pro-55Roman";
+        src: url("https://anima-uploads.s3.amazonaws.com/projects/601d5748f1e2d6422d0d0d38/fonts/nhaasgrotesktxpro-55rg.otf")
+          format("opentype");
+      }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+      @font-face {
+        font-family: "Neue Haas Grotesk Text Pro-Medium";
+        src: url("https://anima-uploads.s3.amazonaws.com/projects/60570718477be2ef894ed429/fonts/nhaasgrotesktxpro-65md.ttf")
+          format("truetype");
+      }
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+      * {
+        -webkit-font-smoothing: antialiased;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0px;
+        height: 100%;
+      }
+      /* a blue color as a generic focus style */
+      button:focus-visible {
+        outline: 2px solid #4a90e2 !important;
+        outline: -webkit-focus-ring-color auto 5px !important;
+      }
+      a {
+        text-decoration: none;
+      }
