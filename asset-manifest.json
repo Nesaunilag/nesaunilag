@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/nesa-unilag/static/css/main.6b9017e7.css",
-    "main.js": "/nesa-unilag/static/js/main.ae83a2f8.js",
-    "static/js/453.7f57ceca.chunk.js": "/nesa-unilag/static/js/453.7f57ceca.chunk.js",
-    "static/media/img_frame_475.png": "/nesa-unilag/static/media/img_frame_475.b0116e4757998d34d2e9.png",
-    "static/media/img_frame_476.png": "/nesa-unilag/static/media/img_frame_476.b0116e4757998d34d2e9.png",
-    "static/media/img_group_1741.svg": "/nesa-unilag/static/media/img_group_1741.b0116e4757998d34d2e9.svg",
-    "static/media/img_group_40.png": "/nesa-unilag/static/media/img_group_40.b0116e4757998d34d2e9.png",
-    "static/media/img_group_42.svg": "/nesa-unilag/static/media/img_group_42.b0116e4757998d34d2e9.svg",
-    "index.html": "/nesa-unilag/index.html",
-    "main.6b9017e7.css.map": "/nesa-unilag/static/css/main.6b9017e7.css.map",
-    "main.ae83a2f8.js.map": "/nesa-unilag/static/js/main.ae83a2f8.js.map",
-    "453.7f57ceca.chunk.js.map": "/nesa-unilag/static/js/453.7f57ceca.chunk.js.map"
+    "main.css": "/nesaunilag/static/css/main.ffec68ca.css",
+    "main.js": "/nesaunilag/static/js/main.be8845bf.js",
+    "static/js/453.7f57ceca.chunk.js": "/nesaunilag/static/js/453.7f57ceca.chunk.js",
+    "static/media/img_frame_475.png": "/nesaunilag/static/media/img_frame_475.b0116e4757998d34d2e9.png",
+    "static/media/img_frame_476.png": "/nesaunilag/static/media/img_frame_476.b0116e4757998d34d2e9.png",
+    "static/media/img_group_1741.svg": "/nesaunilag/static/media/img_group_1741.b0116e4757998d34d2e9.svg",
+    "static/media/img_group_40.png": "/nesaunilag/static/media/img_group_40.b0116e4757998d34d2e9.png",
+    "static/media/img_group_42.svg": "/nesaunilag/static/media/img_group_42.b0116e4757998d34d2e9.svg",
+    "index.html": "/nesaunilag/index.html",
+    "main.ffec68ca.css.map": "/nesaunilag/static/css/main.ffec68ca.css.map",
+    "main.be8845bf.js.map": "/nesaunilag/static/js/main.be8845bf.js.map",
+    "453.7f57ceca.chunk.js.map": "/nesaunilag/static/js/453.7f57ceca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b9017e7.css",
-    "static/js/main.ae83a2f8.js"
+    "static/css/main.ffec68ca.css",
+    "static/js/main.be8845bf.js"
   ]
 }
