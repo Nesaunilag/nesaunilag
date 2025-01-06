@@ -1,5 +1,7 @@
 import MegaMenu1 from "../MegaMenu1";
+import MegaMenu2 from "../MegaMenu2";
 import { Button, Img, Text } from "./..";
+import { Link } from "react-router-dom"; // Import Link
 import React from "react";
 
 export default function Header({ ...props }) {
@@ -105,7 +107,7 @@ export default function Header({ ...props }) {
                     className="h-[3px] w-[6px]"
                   />
                 </div>
-                {menuOpen1 ? <MegaMenu1 /> : null}
+                {menuOpen1 ? <MegaMenu2 /> : null}
               </li>
               <li
                 onMouseLeave={() => setMenuOpen2(false)}
@@ -128,7 +130,7 @@ export default function Header({ ...props }) {
                 {menuOpen2 ? <MegaMenu1 /> : null}
               </li>
               <li>
-                <a href="#">
+                <Link to="/gallery">
                   <Text
                     size="textmd"
                     as="p"
@@ -136,12 +138,13 @@ export default function Header({ ...props }) {
                   >
                     Gallery
                   </Text>
-                </a>
+                </Link>
               </li>
             </ul>
 
             {/* ThirdDiv: Button - Hidden on mobile */}
             <div className="hidden md:block">
+              <Link to="/contact">
               <Button
                 size="sm"
                 rightIcon={
@@ -155,6 +158,7 @@ export default function Header({ ...props }) {
               >
                 Get in Touch
               </Button>
+              </Link>
             </div>
           </div>
 
@@ -221,12 +225,14 @@ export default function Header({ ...props }) {
                   </a>
                 </li>
                 <li>
+                  <Link to="/contact">
                   <Button
                     size="sm"
                     className="min-w-[166px] gap-1 rounded-[22px] px-5 font-semibold bg-chocolate text-white"
                   >
                     Get in Touch
                   </Button>
+                  </Link>
                 </li>
               </ul>
             </div>

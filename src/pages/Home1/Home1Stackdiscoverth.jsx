@@ -36,7 +36,7 @@ export default function Home1Stackdiscoverth() {
                 <div className="absolute left-[4%] top-0 z-[7] m-auto h-[342px] w-[20%] rotate-[-6deg] content-center rounded-[20px] bg-[#d97213] px-5 py-4 md:h-auto">
                     <div className="mx-auto flex flex-1 flex-col items-end gap-2">
                         <div className="self-stretch rounded-[16px] bg-[#ffffff]">
-                            <Img src="images/img_ef92a3ef42d2661.png" alt="Ef92a3ef42d2661" className="h-[258px] w-full rounded-[16px] object-cover md:h-auto" />
+                            <Img src="images/Adam_Smith.jfif" alt="Adam Smith" className="h-[258px] w-full rounded-[16px] object-cover md:h-auto" />
                         </div>
                         <Heading size="headings" as="p" className="mr-5 text-[12px] font-semibold italic text-[#ffffff] md:mr-0">Father of modern economics</Heading>
                     </div>

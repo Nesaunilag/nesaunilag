@@ -2,17 +2,17 @@ import { Text } from "../../components";
 import { Link } from "react-router-dom"; // Import Link
 import React from "react";
 
-export default function MegaMenu1() {
+export default function MegaMenu2() {
   return (
     <div className="absolute top-auto z-[99] min-w-[200px] pt-3">
       <div className="w-full rounded-lg bg-[#ffffff] p-5 shadow-[0_0_13px_5px_#00000029]">
         <div className="flex gap-[30px]">
           {/* Column 1 */}
           <div className="flex flex-col items-start gap-4 sm:gap-4">
-            <Text className="text-[18px] font-bold text-[#000000] sm:text-[15px]">Title 1</Text>
+            <Text className="text-[18px] font-bold text-[#000000] sm:text-[15px]">Upcoming Events</Text>
             <div className="flex flex-col items-start gap-3 sm:gap-3">
-              <Link to="/about" className="sm:text-[13px]">
-                <Text className="text-[16px] font-normal text-[#656d76]">Get To Know Us</Text>
+              <Link to="/events" className="sm:text-[13px]">
+                <Text className="text-[16px] font-normal text-[#656d76]">All Events</Text>
               </Link>
               <Link to="/executives" className="sm:text-[13px]">
                 <Text className="text-[16px] font-normal text-[#656d76]">Executives</Text>
@@ -20,7 +20,7 @@ export default function MegaMenu1() {
               <Link to="/alumni" className="sm:text-[13px]">
                 <Text className="text-[16px] font-normal text-[#656d76]">Notable Alumni</Text>
               </Link>
-              <Link to="/events" className="sm:text-[13px]">
+              <Link to="/menu4" className="sm:text-[13px]">
                 <Text className="text-[16px] font-normal text-[#656d76]">Menu 4</Text>
               </Link>
               <Link to="/menu5" className="sm:text-[13px]">
@@ -30,7 +30,7 @@ export default function MegaMenu1() {
           </div>
 
           {/* Column 2 */}
-          <div className="flex flex-col items-start gap-4 sm:gap-4">
+          <div className="flex-col items-start gap-4 sm:gap-4 hidden">
             <Text className="text-[18px] font-bold text-[#000000] sm:text-[15px]">Title 2</Text>
             <div className="flex flex-col items-start gap-3 sm:gap-3">
               <Link to="/menu1" className="sm:text-[13px]">
@@ -46,7 +46,7 @@ export default function MegaMenu1() {
           </div>
 
           {/* Column 3 */}
-          <div className="flex flex-col items-start gap-4 sm:gap-4">
+          <div className="flex-col items-start gap-4 sm:gap-4 hidden">
             <Text className="text-[18px] font-bold text-[#000000] sm:text-[15px]">Title 3</Text>
             <div className="flex flex-col items-start gap-3 sm:gap-3">
               <Link to="/menu1" className="sm:text-[13px]">

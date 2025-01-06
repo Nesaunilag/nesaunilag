@@ -1,8 +1,10 @@
 import React from "react";
+import { Text, Button, Heading, Img } from "../../components";
 import "./style.css"
 import { Frame } from "../../components/Frame";
 import { Frame475 } from "../../components/Frame475";
 import { PropertyDefaultWrapper } from "../../components/PropertyDefaultWrapper";
+import WelcomeSection from "../../components/WelcomeSection";
 
 export default function Hero () {
     return (
@@ -10,23 +12,33 @@ export default function Hero () {
           <div className="relative h-[720px] bg-[#fffbf6] overflow-hidden">
             <div className="">
               <div className="">
-                <Frame className="!absolute !rotate-[-20.00deg] !left-[47px] !top-[228px]" property1="default" />
-                <p className="absolute w-[839px] top-[138px] left-[339px] [font-family:'Neue_Haas_Grotesk_Text_Pro-Medium',Helvetica] font-medium text-transparent text-[76px] text-center tracking-[0] leading-[normal]">
-                  <span className="text-black">
-                    Discover the <br />
-                    Heart of{" "}
-                  </span>
-                  <span className="text-[#d97213]">Economics</span>
-                  <span className="text-black"> Thoughts</span>
-                </p>
+                <Frame className="hidden xl:block xl:absolute xl:rotate-[-20.00deg] xl:left-[47px] xl:top-[228px]" property1="default" />
+                
+                <div className="flex items-center justify-center min-h-screen">
+                  <div className="xl:w-[50%] mx-auto">
+                    <p className="[font-family:'Neue_Haas_Grotesk_Text_Pro-Medium',Helvetica] font-medium text-transparent text-[59px] xl:text-[76px] text-center tracking-[0] leading-[normal]">
+                      <span className="font-thin text-black text-[22px] leading-[normal] [font-family:'Open_Sans',Helvetica] tracking-[0]">
+                        WELCOME <br />
+                      </span>
+                      <span className="text-black">
+                        Discover the <br />
+                        Heart of{" "}
+                      </span>
+                      <span className="text-[#d97213]">Economics</span>
+                      <span className="text-black"> Thoughts</span>
+                    </p>
+                    
+                  </div>
+                </div>
+
                 <PropertyDefaultWrapper
-                  className="!absolute !rotate-[-6.00deg] !left-[105px] !top-3"
+                  className="hidden xl:block xl:absolute xl:rotate-[-6.00deg] xl:left-[105px] xl:top-3"
                   imageClassName="!h-[320px] !rotate-[6.00deg] !-left-3 !w-56 !-top-2.5"
                   img="https://c.animaapp.com/WzNSGM6X/img/ef92a3ef42d2661ca159bfe314a7ca90-1-2@2x.png"
                   property1="default"
                 />
               </div>
-              <div className="absolute w-[374px] h-[583px] top-0 left-[1160px]">
+              <div className="hidden xl:block xl:absolute xl:w-[374px] xl:h-[583px] xl:top-0 xl:left-[1160px]">
                 <Frame475
                   IMG="https://c.animaapp.com/WzNSGM6X/img/img-0246-2@2x.png"
                   IMGClassName="!h-[290px] !rotate-[-10.00deg] !left-[-21px] !w-[237px] !top-[-15px]"
@@ -91,9 +103,6 @@ export default function Hero () {
                 <div className="relative w-fit mt-[-1.00px] [font-family:'Open_Sans',Helvetica] font-semibold text-white text-2xl text-center tracking-[0] leading-[normal]">
                   Explore
                 </div>
-              </div>
-              <div className="absolute top-[103px] left-[700px] font-normal text-black text-2xl text-center leading-[normal] [font-family:'Open_Sans',Helvetica] tracking-[0]">
-                WELCOME
               </div>
             </div>
           </div>

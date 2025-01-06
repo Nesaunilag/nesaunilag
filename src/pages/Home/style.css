@@ -1,39 +1,55 @@
 .home {
-    display: flex;
+  display: flex;
 }
 
 .home div {
-    margin: 1.5vh 0;
+  margin: 1.5vh 0;
 }
 div {
-    font-family:'Open_Sans',Helvetica;
+  font-family: "Open_Sans", Helvetica;
 }
 
-@keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%); /* Change this to match the total width of all cards */
-    }
+.scroll-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  animation: seamless-scroll 35s linear infinite;
+}
+
+.scroll-content > div {
+  flex-shrink: 0;
+}
+
+@keyframes seamless-scroll {
+  0% {
+    transform: translateX(0);
   }
-  
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-content:hover {
+  animation-play-state: paused; /* Pause animation on hover for usability */
+}
+
+.shadow-fade {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0)
+  );
+  pointer-events: none; /* Prevent interaction */
+  width: 45px;
+}
+
+@media (max-width: 768px) {
   .animate-slide {
-    display: flex;
-    animation: slide 20s linear infinite; /* Adjust duration as needed */
-    gap: 16px; /* Adjust gap between containers */
+    animation: slide 10s linear infinite; /* Adjust for smaller screens */
+    gap: 5px;
   }
-  
-  .shadow-fade {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
-    pointer-events: none; /* Prevent interaction */
-    width: 45px;
-  }
-  
-  @media (max-width: 768px) {
-    .animate-slide {
-      animation: slide 10s linear infinite; /* Adjust for smaller screens */
-      gap: 5px;
-    }
-  }
-  
+}
