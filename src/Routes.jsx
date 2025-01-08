@@ -9,6 +9,7 @@ import EventsPage from './pages/Events';
 import Alumni from './pages/About/Alumni';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
+import Error404 from './pages/Error404';
 
 const ProjectRoutes = () => {
     const element = useRoutes([
@@ -39,6 +40,10 @@ const ProjectRoutes = () => {
         {
             path: '/contact',
             element: <Contact />,
+        },
+        {
+            path: '*',
+            element: <Error404 />
         }
     ]);
     return element;

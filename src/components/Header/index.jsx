@@ -181,7 +181,7 @@ export default function Header({ ...props }) {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/about">
                     <Text
                       size="textmd"
                       as="p"
@@ -189,10 +189,40 @@ export default function Header({ ...props }) {
                     >
                       About
                     </Text>
-                  </a>
+                  </Link>
                 </li>
+
+
+
                 <li>
-                  <a href="#">
+                  <Link to="/executives">
+                    <Text
+                      size="textmd"
+                      as="p"
+                      className="text-[16px] font-light text-[#000000] whitespace-nowrap overflow-hidden text-ellipsis"
+                    >
+                      Executives
+                    </Text>
+                  </Link>
+                </li>
+
+
+
+                <li>
+                  <Link to="/alumni">
+                    <Text
+                      size="textmd"
+                      as="p"
+                      className="text-[16px] font-light text-[#000000] whitespace-nowrap overflow-hidden text-ellipsis"
+                    >
+                      Alumni
+                    </Text>
+                  </Link>
+                </li>
+
+
+                <li>
+                  <Link to="/events">
                     <Text
                       size="textmd"
                       as="p"
@@ -200,7 +230,7 @@ export default function Header({ ...props }) {
                     >
                       Events
                     </Text>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a href="#">
@@ -214,7 +244,7 @@ export default function Header({ ...props }) {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/gallery">
                     <Text
                       size="textmd"
                       as="p"
@@ -222,7 +252,7 @@ export default function Header({ ...props }) {
                     >
                       Gallery
                     </Text>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link to="/contact">

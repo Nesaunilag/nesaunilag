@@ -9,6 +9,14 @@ div {
   font-family: "Open_Sans", Helvetica;
 }
 
+.parallax-bg {
+  background-image: url("https://c.animaapp.com/WzNSGM6X/img/-lay0742-1.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .scroll-container {
   display: flex;
   overflow: hidden;
@@ -22,6 +30,7 @@ div {
 
 .scroll-content > div {
   flex-shrink: 0;
+  margin: auto 0.6rem;
 }
 
 @keyframes seamless-scroll {
@@ -34,7 +43,7 @@ div {
 }
 
 .scroll-content:hover {
-  animation-play-state: paused; /* Pause animation on hover for usability */
+  animation-play-state: running; /* Pause animation on hover for usability */
 }
 
 .shadow-fade {

@@ -9,6 +9,7 @@ import Gallery from "./Gallery";
 import Events from "./Events";
 import Sponsor from "./Sponsor";
 import Highlights from "./Highlights";
+import Socials from "./Socials";
 
 
 
@@ -57,8 +58,13 @@ export const Home = () => {
        
         
        
-        <div>
+        {/* <div>
           <Sponsor />
+        </div> */}
+
+
+        <div>
+          <Socials />
         </div>
 
 
