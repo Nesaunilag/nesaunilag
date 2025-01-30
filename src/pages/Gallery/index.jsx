@@ -19,13 +19,13 @@ export default function Gallery() {
                     as="h1"
                     className="font-bold text-[#ffff] md:text-[44px] sm:text-[38px]"
                 >
-                    ALUMNI MAKING A DIFFERENCE
+                    GALLERY
                 </Heading>
                 </div>
             </div>
 
 
-            <div className="flex flex-col items-center gap-[100px] md:gap-[75px] sm:gap-[50px]">
+            <div className="flex flex-col gap-[50px] md:gap-[75px] sm:gap-[50px]">
                 <GallerySectionA />
                 <GallerySectionB />
                 <GallerySectionC />

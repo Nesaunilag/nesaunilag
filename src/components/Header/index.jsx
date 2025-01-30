@@ -194,31 +194,7 @@ export default function Header({ ...props }) {
 
 
 
-                <li>
-                  <Link to="/executives">
-                    <Text
-                      size="textmd"
-                      as="p"
-                      className="text-[16px] font-light text-[#000000] whitespace-nowrap overflow-hidden text-ellipsis"
-                    >
-                      Executives
-                    </Text>
-                  </Link>
-                </li>
-
-
-
-                <li>
-                  <Link to="/alumni">
-                    <Text
-                      size="textmd"
-                      as="p"
-                      className="text-[16px] font-light text-[#000000] whitespace-nowrap overflow-hidden text-ellipsis"
-                    >
-                      Alumni
-                    </Text>
-                  </Link>
-                </li>
+            
 
 
                 <li>

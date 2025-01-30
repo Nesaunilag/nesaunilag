@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import { Heading, Img, Button } from "../../components";
 import UserProfile3 from "../../components/UserProfile3";
+import { Link } from "react-router-dom"; // Import Link
 import "./style.css";
 
 
@@ -84,7 +85,9 @@ export default function Contact() {
                 <div className="form">
                   <textarea id="message" name="message" placeholder="Message" />
                 </div>
-                <Button type="submit" size="3x1" className="min-w-[168px] bg-blue-900 text-white rounded-[30px] px-[34px] font-semibold sm:px-5">Submit</Button>
+                <Link to="/*">
+                  <Button type="submit" size="3x1" className="min-w-[168px] bg-blue-900 text-white rounded-[30px] px-[34px] font-semibold sm:px-5">Submit</Button>
+                </Link>
               </form>
 
               </div>

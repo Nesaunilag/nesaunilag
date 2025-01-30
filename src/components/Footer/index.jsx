@@ -1,4 +1,5 @@
 import { Img, Text } from "./.."; 
+import { Link } from "react-router-dom"; // Import Link
 import React from "react";
 
 export default function Footer({ ...props }) {
@@ -30,11 +31,11 @@ export default function Footer({ ...props }) {
 
           {/* Navigation Links */}
           <div className="flex justify-center items-center flex-wrap gap-6 md:gap-10">
-            <Text className="text-white text-xl font-bold">Home</Text>
-            <Text className="text-white text-xl">About</Text>
-            <Text className="text-white text-xl">Events</Text>
-            <Text className="text-white text-xl">News and Blog</Text>
-            <Text className="text-white text-xl">Contact Us</Text>
+            <Link to="/"><Text className="text-white text-xl font-bold">Home</Text></Link>
+            <Link to="/about"><Text className="text-white text-xl">About</Text></Link>
+            <Link to="/events"><Text className="text-white text-xl">Events</Text></Link>
+            <Link to="/news-and-blog"><Text className="text-white text-xl">News and Blog</Text></Link>
+            <Link to="/contact"><Text className="text-white text-xl">Contact Us</Text></Link>
           </div>
         </div>
 
@@ -45,8 +46,8 @@ export default function Footer({ ...props }) {
         <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-[1200px] mx-auto gap-6">
           {/* Portals Links */}
           <div className="flex gap-6">
-            <Text className="text-white text-xl">Student Portal</Text>
-            <Text className="text-white text-xl">UNILAG Portal</Text>
+            <a href="https://studentportal.unilag.edu.ng/login"><Text className="text-white text-xl">Student Portal</Text></a>
+            <a href="https://unilag.edu.ng/"><Text className="text-white text-xl">UNILAG Portal</Text></a>
           </div>
 
           {/* Social Media Icons (example with placeholder image) */}

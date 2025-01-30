@@ -43,52 +43,61 @@ export default function GallerySectionE() {
           {galleryData.title}
         </Heading>
         <div className="flex flex-col items-center gap-[42px] self-stretch">
-          <div className="mx-auto flex w-full gap-5 self-stretch md:mx-0 md:flex-col">
-            <Slider
-              autoplay
-              autoPlayInterval={2000}
-              responsive={{
-                0: { items: 1 },
-                551: { items: 1 },
-                1051: { items: 3 },
+  <div className="mx-auto flex w-full gap-5 self-stretch md:mx-0 md:flex-col">
+    <Slider
+      autoplay
+      autoPlayInterval={2000}
+      responsive={{
+        0: { items: 1 },
+        551: { items: 1 },
+        1051: { items: 3 },
+      }}
+      disableDotsControls
+      activeIndex={sliderState}
+      onSlideChanged={(e) => setSliderState(e?.item)}
+      ref={sliderRef}
+      items={galleryData.images.map((imageUrl, imgIndex) => (
+        <React.Fragment key={imgIndex}>
+          <div className="px-2.5">
+            <div
+              className="h-[280px] bg-cover bg-center"
+              style={{
+                backgroundImage: `url(${imageUrl})`,
               }}
-              disableDotsControls
-              activeIndex={sliderState}
-              onSlideChanged={(e) => setSliderState(e?.item)}
-              ref={sliderRef}
-              items={galleryData.images.map((imageUrl, imgIndex) => (
-                <React.Fragment key={imgIndex}>
-                  <div className="px-2.5">
-                    <div
-                      className="h-[280px] bg-cover bg-center"
-                      style={{
-                        backgroundImage: `url(${imageUrl})`,
-                      }}
-                    />
-                  </div>
-                </React.Fragment>
-              ))}
             />
           </div>
-          <div className="flex items-center justify-center">
-            {[...Array(Math.ceil(galleryData.images.length / (sliderRef?.current?.state?.itemsInSlide || 1)))].map((_, i) => (
-              <div
-                key={i}
-                onClick={() =>
-                  sliderRef?.current?.slideTo(i * (sliderRef?.current?.state?.itemsInSlide || 1))
-                }
-                className={`mr-1.5 inline-block h-[16px] w-[16px] cursor-pointer rounded-[50%] ${
-                  sliderState >=
-                    i * (sliderRef?.current?.state?.itemsInSlide || 1) &&
-                  sliderState <
-                    (i + 1) * (sliderRef?.current?.state?.itemsInSlide || 1)
-                    ? "bg-[#d9d9d9]"
-                    : "bg-[#d9d9d9]"
-                }`}
-              />
-            ))}
-          </div>
-        </div>
+        </React.Fragment>
+      ))}
+    />
+  </div>
+  <div className="flex items-center justify-center">
+    {/* Reduce the number of dots by grouping slides */}
+    {[
+      ...Array(
+        Math.ceil(
+          galleryData.images.length /
+            (sliderRef?.current?.state?.itemsInSlide || 1) // Items in slide
+        )
+      ).slice(0, 5), // Adjust the `5` to control the maximum number of dots visible
+    ].map((_, i) => (
+      <div
+        key={i}
+        onClick={() =>
+          sliderRef?.current?.slideTo(i * (sliderRef?.current?.state?.itemsInSlide || 1))
+        }
+        className={`mr-1.5 inline-block h-[16px] w-[16px] cursor-pointer rounded-[50%] ${
+          sliderState >=
+            i * (sliderRef?.current?.state?.itemsInSlide || 1) &&
+          sliderState <
+            (i + 1) * (sliderRef?.current?.state?.itemsInSlide || 1)
+            ? "bg-[#d9d9d9]"
+            : "bg-[#f0f0f0]"
+        }`}
+      />
+    ))}
+  </div>
+</div>
+
       </div>
     </div>
   );

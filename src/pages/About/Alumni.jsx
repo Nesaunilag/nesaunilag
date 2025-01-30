@@ -22,7 +22,7 @@ export default function Alumni() {
 
             
 
-            <div className="container-sm md: px-5">
+            <div className="container-sm md: px-5 py-8">
             <div className="grid grid-cols-1 justify-center gap-5 md:grid-cols-4 sm:grid-cols-2">
              <Suspense fallback={<div>Loading feed...</div>}> {[...Array(20)].map((d, index) => (
             <div key={"gridframe" + index} className="h-[366px] w-full bg-[#cacaca]" />

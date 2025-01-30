@@ -66,7 +66,7 @@ export default function Hero () {
               </div>
 
 
-              <div className="hidden xl:block xl:absolute xl:w-[374px] xl:h-[583px] xl:top-0 xl:left-[1160px]">
+              <div className="hidden xl:block xl:absolute xl:w-[374px] xl:h-[583px] xl:top-0 xl:right-[20px]">
                 <div data-aos="fade-down">
                 <Frame475
                   IMG="https://c.animaapp.com/WzNSGM6X/img/img-0246-2@2x.png"
