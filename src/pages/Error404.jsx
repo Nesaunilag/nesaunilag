@@ -23,7 +23,7 @@ const Error404 = () => {
       </div>
       <div
         className={styles.torch}
-        style={{ top: position.y, left: position.x }}
+        style={{ top: position.y - 60, left: position.x - 60 }}
       ></div>
     </div>
   );

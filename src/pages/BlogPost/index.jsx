@@ -1,6 +1,7 @@
 import React from "react";
 import { Heading } from "../../components";
 import { useParams } from "react-router-dom";
+import Error404 from "../Error404"
 
 const blogPosts = [
   {
@@ -89,7 +90,12 @@ export default function BlogPostDetails() {
   const { id } = useParams(); // Get blog post ID from URL
   const blogPost = blogPosts.find((post) => post.id === id);
 
-
+  // ✅ Prevent crash if blogPost is undefined
+  if (!blogPost) {
+    return <div className="text-center text-xl text-red-500">
+      <Error404 />
+    </div>;
+  }
 
   return (
     <div className="w-full">
