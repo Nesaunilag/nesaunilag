@@ -1,33 +1,85 @@
 import React, { useState, useEffect } from "react";
 import highlight1 from "../../images/department-highlight-1.jpeg"
 import highlight2 from "../../images/nesa-removebg-preview 2.png"
+import { Link } from "react-router-dom"; // Import Link
 import axios from "axios";
 import "./style.css";
 
 export default function Highlights() {
-  const [blogPosts, setBlogPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const fetchBlogPosts = async () => {
-      try {
-        const response = await axios.get("https://faculty-backend-55jd.onrender.com/blogPosts");
-        console.log(response.data);
-        setBlogPosts(response.data);
-        setLoading(false);
-      } catch (err) {
-        console.error("Error fetching blog posts:", err);
-        setError("Failed to load blog posts. Please try again later.");
-        setLoading(false);
-      }
-    };
-
-    fetchBlogPosts();
-  }, []);
-
-  if (loading) return <div>Loading blog posts...</div>;
-  if (error) return <div>{error}</div>;
+  const blogPosts = [
+    {
+      id: "8",
+      dateCreated: "2025-02-05",
+      title: "THE DOMINANCE OF CHINA'S ECONOMY IN ASIA",
+      details: "NED",
+      location: "Unilag Main Auditorium",
+      time: "8:00AM",
+      image: "/images/Events/ned.png", // Replace with actual image URL
+    },
+    {
+      id: "7",
+      dateCreated: "2025-01-30",
+      title: "Tope Kolade Fasua",
+      details: "NED",
+      location: "Unilag Main Auditorium",
+      time: "8:00AM",
+      image: "/images/Events/ned.png", // Replace with actual image URL
+    },
+    {
+      id: "6",
+      dateCreated: "2025-01-25",
+      title: "ATM OR POS",
+      details: "NED",
+      location: "Unilag Main Auditorium",
+      time: "8:00AM",
+      image: "/images/Events/ned.png", // Replace with actual image URL
+    },
+    {
+      id: "5",
+      dateCreated: "2025-01-22",
+      title: "ECONOMIST OF THE WEEK: TONY ELUMELU",
+      details: "NED",
+      location: "Unilag Main Auditorium",
+      time: "8:00AM",
+      image: "/images/Events/ned.png", // Replace with actual image URL
+    },
+    {
+      id: "4",
+      dateCreated: "2025-01-20",
+      title: "MEET THE BEST GRADUATING STUDENT",
+      details: "NED",
+      location: "Unilag Main Auditorium",
+      time: "8:00AM",
+      image: "/images/Events/ned.png", // Replace with actual image URL
+    },
+    {
+      id: "3",
+      dateCreated: "2024-10-22",
+      title: "A New Dawn for NESA",
+      details: "NED",
+      location: "Unilag Main Auditorium",
+      time: "8:00AM",
+      image: "/images/Events/ned.png", // Replace with actual image URL
+    },
+    {
+      id: "",
+      dateCreated: "2024-10-22",
+      title: "MEET OUR NEWLY SELECTED EXCOS",
+      details: "NED",
+      location: "Unilag Main Auditorium",
+      time: "8:00AM",
+      image: "/images/Events/ned.png", // Replace with actual image URL
+    },
+    {
+      id: "1",
+      dateCreated: "2024-09-10",
+      title: "5 Essentials You Need When Resuming as a University Student",
+      details: "Career Fair",
+      location: "Unilag Multipurpose Hall",
+      time: "10:00AM",
+      image: "/images/Events/somelogo.png", // Replace with actual image URL
+    },
+  ];
 
   return (
     <div className="w-full h-full bg-white py-10 px-4 md:px-20 overflow-hidden">
@@ -117,24 +169,25 @@ export default function Highlights() {
 
       {/* Blog Posts */}
       <div className="space-y-8">
-        {blogPosts.map((post, index) => (
-          <div key={index} className="flex flex-col md:flex-row bg-[#fffbf6] shadow-lg p-6">
-            <div className="flex-grow">
-              <p className="text-[32px] font-normal text-black mb-4">{post.title}</p>
-              <div className="text-xl italic text-[#03045e]">Read More...</div>
-            </div>
-            <div className="w-[200px] h-[150px] bg-[#d97213] flex items-center justify-center text-white">
-              <div>
-                <div className="text-5xl font-medium">{post.dateCreated?.split("-")[2]}</div>
-                <div className="text-2xl">
-                  {new Date(post.dateCreated).toLocaleString("default", { month: "short" })}
-                </div>
+      {blogPosts.map((post) => (
+        <div key={post.id} className="flex flex-col md:flex-row bg-[#fffbf6] shadow-lg p-6">
+          <div className="flex-grow">
+            <p className="text-[32px] font-normal text-black mb-4">{post.title}</p>
+            <Link to={`/blog/${post.id}`} className="text-xl italic text-[#03045e]">
+              Read More...
+            </Link>
+          </div>
+          <div className="w-[200px] h-[150px] bg-[#d97213] flex items-center justify-center text-white">
+            <div>
+              <div className="text-5xl font-medium">{post.dateCreated?.split("-")[2]}</div>
+              <div className="text-2xl">
+                {new Date(post.dateCreated).toLocaleString("default", { month: "short" })}
               </div>
             </div>
           </div>
-        ))}
-      </div>
-
+        </div>
+      ))}
+    </div>
       {/* View All Section */}
       <div className="flex justify-end items-center mt-10 text-xl text-[#d97213]">
         <div className="mr-4">View all</div>
@@ -154,7 +207,9 @@ export default function Highlights() {
           src="https://c.animaapp.com/WzNSGM6X/img/line-8.svg"
         />
         <div className="flex justify-center">
+          <a href="https://nesaunilag.substack.com/subscribe?utm_source=menu&simple=true&next=https%3A%2F%2Fnesaunilag.substack.com%2Fp%2Fa-new-dawn-for-nesa-building-a-stronger" target="_blank" rel="noopener noreferrer">
           <button className="px-8 py-3 bg-[#d97213] text-white font-medium rounded-full">Subscribe</button>
+          </a>
         </div>
       </div>
     </div>

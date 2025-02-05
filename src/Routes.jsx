@@ -6,6 +6,7 @@ import Home2 from './pages/Home2';
 import About from './pages/About';
 import Executives from './pages/About/Executives';
 import EventsPage from './pages/Events';
+import BlogPost from "./pages/BlogPost";
 import Alumni from './pages/About/Alumni';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
@@ -28,6 +29,10 @@ const ProjectRoutes = () => {
         {
             path: '/alumni',
             element: <Alumni />,
+        },
+        {
+            path: '/blog/:id',
+            element: <BlogPost />,
         },
         {
             path: '/events',

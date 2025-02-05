@@ -12,29 +12,138 @@ import {
 } from "react-accessible-accordion";
 
 export default function Executives() {
-  const [executives, setExecutives] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+      // backend data for executives
 
-  useEffect(() => {
-    // Fetch data from the backend
-    const fetchExecutives = async () => {
-      try {
-        const response = await axios.get("https://faculty-backend-55jd.onrender.com/getExecutives");
-        setExecutives(response.data); // Assuming response.data is an array of executives
-        setLoading(false);
-      } catch (err) {
-        console.error("Error fetching executives:", err);
-        setError("Failed to fetch executives.");
-        setLoading(false);
-      }
-    };
 
-    fetchExecutives();
-  }, []);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
+  // const [executives, setExecutives] = useState([]);
+  // const [loading, setLoading] = useState(true);
+  // const [error, setError] = useState(null);
+
+  // useEffect(() => {
+  //   // Fetch data from the backend
+  //   const fetchExecutives = async () => {
+  //     try {
+  //       const response = await axios.get("https://faculty-backend-55jd.onrender.com/getExecutives");
+  //       setExecutives(response.data); // Assuming response.data is an array of executives
+  //       setLoading(false);
+  //     } catch (err) {
+  //       console.error("Error fetching executives:", err);
+  //       setError("Failed to fetch executives.");
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   fetchExecutives();
+  // }, []);
+
+  // if (loading) return <div>Loading...</div>;
+  // if (error) return <div>{error}</div>;
+
+
+
+
+
+
+
+
+    // Static frontend data for executives
+    
+    const executives = [
+      {
+        name: "Temidayo Ogunmuyiwa",
+        title: "President",
+        imageUrl: "/images/executives/temidayo.jpg",
+        linkedin: "https://www.linkedin.com/in/temidayo-ogunmuyiwa-217203233/",
+      },
+      {
+        name: "John Unachukwu",
+        title: "Vice President",
+        imageUrl: "/images/executives/john.jpg",
+        linkedin: "https://www.linkedin.com/in/john-unachukwu-859a8b256/",
+      },
+      {
+        name: "Chinenyenwa Udenta",
+        title: "General Secretary",
+        imageUrl: "/images/executives/gen-sec.jpg",
+        linkedin: "https://linkedin.com/in/",
+      },
+      {
+        name: "Onadeji Ariyo",
+        title: "Asst. Gen. Secretary",
+        imageUrl: "/images/executives/ariyo.jpg",
+        linkedin: "https://www.linkedin.com/in/ariyo-onadeji/",
+      },
+      {
+        name: "Ijimakinwa Oluwatimilehin",
+        title: "Financial Secretary",
+        imageUrl: "/images/executives/dre.jpg",
+        linkedin: "https://www.linkedin.com/in/oluwatimilehin-ijimakinwa-167636234/",
+      },
+      {
+        name: "Yusuff Luqman",
+        title: "Treasurer",
+        imageUrl: "/images/executives/Luqman.jpg",
+        linkedin: "https://www.linkedin.com/in/luqman-yusuff-8a2446255/",
+      },
+      {
+        name: "Anuoluwapo Adeola Afe",
+        title: "Social Secretary",
+        imageUrl: "/images/executives/Anu.jpg",
+        linkedin: "https://www.linkedin.com/in/anuoluwapo-afe-00b94b1a3/",
+      },
+      {
+        name: "Idris Simisola",
+        title: "Asst. Social Secretary",
+        imageUrl: "/images/executives/simi.jpg",
+        linkedin: "https://www.linkedin.com/in/",
+      },
+      {
+        name: "Hamzat Naheem",
+        title: "Sport Secretary",
+        imageUrl: "/images/executives/naheem.jpg",
+        linkedin: "https://www.linkedin.com/in/naheem-hamzat-4337951a2/",
+      },
+      {
+        name: "Ajiboye Deborah Temidire",
+        title: "Asst. Sport Secretary",
+        imageUrl: "/images/executives/temidire.jpg",
+        linkedin: "https://www.linkedin.com/in/",
+      },
+      {
+        name: "Adalumo Mercy Temitope",
+        title: "Public Relations Officer",
+        imageUrl: "/images/executives/mercy.jpg",
+        linkedin: "https://www.linkedin.com/in/adalumo-mercy/",
+      },
+      {
+        name: "Abiola Serah Kola-Kareem",
+        title: "Asst. Public Relations Officer",
+        imageUrl: "/images/executives/abiola.jpg",
+        linkedin: "https://www.linkedin.com/in/abiola-k-501623247/",
+      },
+      {
+        name: "Michael Stacy Ngozi",
+        title: "Welfare Secretary",
+        imageUrl: "/images/executives/stacy.jpg",
+        linkedin: "https://www.linkedin.com/in/stacy-michael-388052249/",
+      },
+      {
+        name: "Jimoh Nimot Kofoworola",
+        title: "Asst. Welfare Secretary",
+        imageUrl: "/images/executives/-.jpg",
+        linkedin: "https://www.linkedin.com/in/nimot-jimoh-332106276/",
+      },
+      {
+        name: "Adesina Oluwatobiloba",
+        title: "Librarian",
+        imageUrl: "/images/executives/Tobi.jpg",
+        linkedin: "https://www.linkedin.com/in/nimot-jimoh-332106276/",
+      },
+    ];
+
+
+
 
   return (
     <div className="flex flex-col">
@@ -60,7 +169,7 @@ export default function Executives() {
           >
             NESA Executives 24/25
           </Heading>
-          <div className="grid grid-cols-1 gap-[18px] self-stretch md:grid-cols-4 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-[18px] self-stretch md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-2">
             <Suspense fallback={<div>Loading feed...</div>}>
               {executives.map((exec, index) => (
                 <UserProfile1
@@ -103,18 +212,10 @@ export default function Executives() {
                 </AccordionItemButton>
               </AccordionItemHeading>
               <AccordionItemPanel>
-                <div className="grid grid-cols-1 gap-[18px] self-stretch md:grid-cols-4 sm:grid-cols-2">
-                  <Suspense fallback={<div>Loading feed...</div>}>
-                    {executives.map((exec, index) => (
-                      <UserProfile1
-                        key={`accordion-gridview-${index}`}
-                        userName={exec.name}
-                        userTitle={exec.position}
-                        userLinkdin={exec.linkedin}
-                        userImage={exec.image}
-                      />
-                    ))}
-                  </Suspense>
+                <div className="w-[100wv]">
+                  <div className="w-[100%]">
+                    <img className="w-[100%] lg:w-full" src={`${process.env.PUBLIC_URL}/images/executives/exco_past_full.png`} alt="Past Executives Image" />
+                  </div>
                 </div>
               </AccordionItemPanel>
             </AccordionItem>

@@ -7,8 +7,8 @@ export default function UserProfile1({ userName = "Ogunmuyiwa Temidayo", userTit
       {...props}
       className={`${props.className} flex flex-col items-center w-full gap-3 rounded-t1-[20px] rounded-tr-[20px] rounded-bl-[20px] bg-[#fcf5ed]`} 
     >
-      <div className="h-[274px] w-[100%] bg-[#d9d9d9]">
-        <Img src={userImage} alt="userImage" className="h-full w-full" />
+      <div className="h-[474px] lg:h-[274px] w-[100%] bg-[#d9d9d9]">
+        <Img src={userImage} alt="userImage" className="h-full w-full object-cover object-[55%]" />
       </div>
       <div className="mb-4 ml-5 mr-[26px] flex flex-col gap-1 self-stretch">
         <div className="flex flex-col items-start">
