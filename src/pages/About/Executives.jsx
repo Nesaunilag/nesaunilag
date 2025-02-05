@@ -83,7 +83,7 @@ export default function Executives() {
       {
         name: "Yusuff Luqman",
         title: "Treasurer",
-        imageUrl: "/images/Executives/Luqman.jpg",
+        imageUrl: "/images/Executives/luqman.jpg",
         linkedin: "https://www.linkedin.com/in/luqman-yusuff-8a2446255/",
       },
       {
