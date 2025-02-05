@@ -11,7 +11,7 @@ export default function Events() {
       details: "NED",
       location: "Unilag Main Auditorium",
       time: "8:00AM",
-      image: "/images/Events/ned.png", // Replace with actual image URL
+      image: "/images/Events/NED.png", // Replace with actual image URL
     },
     {
       date: "2025-09-10",
