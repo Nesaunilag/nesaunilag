@@ -7,7 +7,7 @@ const blogPosts = [
     id: "3",
     dateCreated: "2024-10-22",
     title: "A New Dawn for NESA",
-    image: "/images/executives/temidayo.jpg",
+    image: "/images/Executives/temidayo.jpg",
     content: [
       { heading: "", text: "As I assume the role of President of the Nigerian Economics Students’ Association (NESA), I am overwhelmed with a deep sense of gratitude and responsibility. The outgoing president and executives have been pillars of strength, guiding NESA with passion, dedication, and an unwavering commitment to excellence. Their efforts have not only sustained the association but have also propelled it forward, setting a high standard for leadership and community engagement. I would like to extend my heartfelt appreciation to them for their remarkable contributions, which have paved the way for this new chapter in NESA's journey." },
       
@@ -89,10 +89,7 @@ export default function BlogPostDetails() {
   const { id } = useParams(); // Get blog post ID from URL
   const blogPost = blogPosts.find((post) => post.id === id);
 
-  // ✅ Prevent crash if blogPost is undefined
-  if (!blogPost) {
-    return <div className="text-center text-xl text-red-500">Post not found</div>;
-  }
+
 
   return (
     <div className="w-full">
