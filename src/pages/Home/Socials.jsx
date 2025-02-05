@@ -15,7 +15,7 @@ import { EffectCards } from 'swiper/modules';
 export default function Socials() {
   return (
     <>
-      <div className='relative w-full min-h-screen bg-[#d97213] h-[724px] flex flex-row items-center justify-center px-8 lg:px-24 xl:px-36 gap-12 xl:gap-32'>
+      <div className='relative w-full min-h-screen bg-[#d97213] h-[724px] flex flex-row items-center justify-center px-4 lg:px-24 xl:px-36 gap-12 xl:gap-32'>
 
 
       <Swiper
@@ -162,10 +162,10 @@ export default function Socials() {
       
 
       <div className='flex flex-col flex-1 px-0 xl:px-8 w-full h-auto items-end justify-end'>
-        <p className='text-right text-white text-[24px] lg:text-[24px]'> Would you like to sponsor our events?</p>
+        <p className='text-right text-white text-[18px] lg:text-[24px]'> Would you like to sponsor our events?</p>
         <Link to="/contact">
-          <div className="inline-flex items-center justify-end gap-2.5 px-[50px] py-[15px] bg-[#03045E] rounded-[1000px]">
-            <div className="text-white">
+          <div className="inline-flex items-center justify-end gap-2.5 px-[20px] py-[15px] bg-[#03045E] rounded-[1000px]">
+            <div className="text-white text-[10px] lg:text-[24px]">
             
                     Contact Us
                
