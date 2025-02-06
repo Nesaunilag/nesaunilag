@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import highlight1 from "../../images/department-highlight-1.jpeg"
 import highlight2 from "../../images/nesa-removebg-preview 2.png"
+import { Component18 } from "../../components/Component18";
 import { Link } from "react-router-dom"; // Import Link
 import axios from "axios";
 import "./style.css";
@@ -19,30 +20,13 @@ export default function Highlights() {
     {
       id: "7",
       dateCreated: "2025-01-30",
-      title: "Tope Kolade Fasua",
+      title: "ECONOMIST OF THE WEEK: Tope Kolade Fasua",
       details: "NED",
       location: "Unilag Main Auditorium",
       time: "8:00AM",
       image: "/images/Events/ned.png", // Replace with actual image URL
     },
-    {
-      id: "6",
-      dateCreated: "2025-01-25",
-      title: "ATM OR POS",
-      details: "NED",
-      location: "Unilag Main Auditorium",
-      time: "8:00AM",
-      image: "/images/Events/ned.png", // Replace with actual image URL
-    },
-    {
-      id: "5",
-      dateCreated: "2025-01-22",
-      title: "ECONOMIST OF THE WEEK: TONY ELUMELU",
-      details: "NED",
-      location: "Unilag Main Auditorium",
-      time: "8:00AM",
-      image: "/images/Events/ned.png", // Replace with actual image URL
-    },
+    
     {
       id: "4",
       dateCreated: "2025-01-20",
@@ -198,6 +182,12 @@ export default function Highlights() {
         />
       </div>
 
+
+     
+
+
+
+
       {/* Subscription Section */}
       <div className="bg-[#03045e] text-white py-10 mt-20">
         <p className="text-[32px] font-medium text-center mb-4">Stay updated with NESA, UNILAG</p>
@@ -212,6 +202,10 @@ export default function Highlights() {
           </a>
         </div>
       </div>
+
+
+
+      
     </div>
   );
 }

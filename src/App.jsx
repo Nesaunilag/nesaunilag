@@ -11,7 +11,9 @@ function App() {
     <Router>
       <div>
         <Header />
+        <div className='pt-[20vh]'>
         <Routes />  {/* Your Project Routes */}
+        </div>
         <Footer />
       </div>
     </Router>

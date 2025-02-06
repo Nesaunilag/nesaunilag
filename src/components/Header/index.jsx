@@ -13,7 +13,8 @@ export default function Header({ ...props }) {
   return (
     <header
       {...props}
-      className={`${props.className} flex justify-center items-center py-4 bg-[#ffffff] z-10 relative`}
+      className={`${props.className} flex justify-center items-center py-4 bg-[#ffffff] z-10 fixed w-full`}
+      style={{ boxShadow: '0px 8px 64px rgba(0, 0, 0, 0.10)' }}
     >
       <div className="container-sm flex justify-center">
         <div className="w-full relative bg-white h-[76px] text-left text-base text-black font-open-sans">
