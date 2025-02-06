@@ -46,7 +46,7 @@ export default function OurExe() {
     {
       name: "Anuoluwapo Adeola Afe",
       title: "Social Secretary",
-      imageUrl: "/images/Executives/Anu.jpg",
+      imageUrl: "/images/Executives/anu.jpg",
       linkedin: "https://www.linkedin.com/in/anuoluwapo-afe-00b94b1a3/",
     },
     {
