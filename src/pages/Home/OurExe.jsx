@@ -40,7 +40,7 @@ export default function OurExe() {
     {
       name: "Yusuff Luqman",
       title: "Treasurer",
-      imageUrl: "/images/Executives/Luqman.jpg",
+      imageUrl: "/images/Executives/luqman.jpg",
       linkedin: "https://www.linkedin.com/in/luqman-yusuff-8a2446255/",
     },
     {
@@ -88,7 +88,7 @@ export default function OurExe() {
     {
       name: "Jimoh Nimot Kofoworola",
       title: "Asst. Welfare Secretary",
-      imageUrl: "/images/Executives/-.jpg",
+      imageUrl: "/images/Executives/nimot.jpg",
       linkedin: "https://www.linkedin.com/in/nimot-jimoh-332106276/",
     },
     {

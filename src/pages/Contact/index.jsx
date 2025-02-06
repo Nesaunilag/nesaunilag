@@ -3,12 +3,14 @@ import { Heading, Img, Button } from "../../components";
 import UserProfile3 from "../../components/UserProfile3";
 import { Link } from "react-router-dom"; // Import Link
 import "./style.css";
+import { image } from "framer-motion/client";
 
 
 
 const data = [
-  { emailLabel: "Email", emailAddress: "Nesaunilagblog@gmail.com" }, { emailLabel: "Call", emailAddress: "+2347066163148" },
-  { emailLabel: "Socials", emailAddress: "Nesaunilagblog@gmail.com" },
+  { emailLabel: "Email", emailAddress: "Nesaunilagblog@gmail.com", icon: "/images/svg/email.svg" }, 
+  { emailLabel: "Call", emailAddress: "+2347066163148", icon: "/images/svg/call.svg" },
+  { emailLabel: "", emailAddress: "", whatsapp: "/images/svg/whatsapp.svg", instagram: "/images/svg/instagram.svg", twitter: "/images/svg/twitter.svg", linkedin: "/images/svg/linkedin.svg", tiktok: "/images/svg/tiktok.svg", youtube: "/images/svg/youtube.svg", },
   {
     emailLabel: "Address",
     emailAddress: (
@@ -19,6 +21,7 @@ const data = [
         Lagos 100213, Nigeria
       </>
     ),
+    icon: "/images/svg/location.svg",
   },
 ];
 
@@ -28,7 +31,7 @@ export default function Contact() {
     <div>
 
       <div className="flex justify-center bg-[#d97213] py-12 md:py-5">
-        <div className="container-sm flex md:px-5">
+        <div className="container-sm flex px-5">
           <Heading
             size="heading3xl"
             as="h1"
@@ -67,10 +70,10 @@ export default function Contact() {
 
       
         <div className="flex flex-col items-center self-stretch">
-          <div className="container-sm flex flex-col items-start gap-7 md:px-5">
+          <div className="container-sm flex flex-col items-start gap-7 px-4 md:px-5">
             <Heading 
               as="h2"
-              className="font-['Neue_Haas_Grotesk_Text_Pro'] text-[48px] font-medium text-[#000000] md:text-[44px] sm:text-[38px]">
+              className="font-['Neue_Haas_Grotesk_Text_Pro'] text-[28px] font-medium text-[#000000] md:text-[44px] sm:text-[38px]">
               SEND A MESSAGE
             </Heading>
             <div className="flex flex-col items-start gap-[30px] self-stretch">

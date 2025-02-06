@@ -16,25 +16,25 @@ export default function Header({ ...props }) {
       className={`${props.className} flex justify-center items-center py-4 bg-[#ffffff] z-10 fixed w-full`}
       style={{ boxShadow: '0px 8px 64px rgba(0, 0, 0, 0.10)' }}
     >
-      <div className="container-sm flex justify-center">
+      <div className="container-sm flex justify-center px-4">
         <div className="w-full relative bg-white h-[76px] text-left text-base text-black font-open-sans">
           <div className="flex justify-between items-center w-full h-[70px]">
             {/* FirstDiv: Logo and Association Name */}
             <div className="flex items-center">
               <Img
-                className="w-[43.1px] h-10 object-cover"
+                className="w-[30px] h-7 lg:w-[43.1px] lg:h-10 object-cover"
                 src={`${process.env.PUBLIC_URL}/images/nesa-removebg-preview 2.png`}
                 alt="Logo"
               />
-              <h3 className="ml-2 leading-[20px] w-[170px] font-semibold text-chocolate text-base md:text-lg">
+              <h3 className="ml-2 lg:ml-2 leading-[20px] w-28 lg:w-[170px] text-[12px] md:text-[16px] font-semibold text-chocolate">
                 Nigerian Economics Students Association
               </h3>
               <img
-                className="mx-1 h-10 bg-black"
+                className="mx-0 lg:mx-1 h-10 bg-black"
                 src={`${process.env.PUBLIC_URL}/images/Vector 8.svg`}
                 alt=""
               />
-              <h3 className="ml-1 leading-[20px] w-[5vw] text-base md:text-lg">
+              <h3 className="ml-1 text-[12px] leading-[20px] w-[10vw] md:text-lg lg:text-3xl">
                 University of Lagos
               </h3>
             </div>

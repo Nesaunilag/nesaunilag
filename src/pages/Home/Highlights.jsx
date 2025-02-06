@@ -149,7 +149,7 @@ export default function Highlights() {
       </div>
 
       {/* Fresh from the Blog Header */}
-      <div className="mt-20 mb-10 text-5xl font-medium text-black">Fresh from the Blog</div>
+      <div className="mt-40 mb-10 text-5xl font-medium text-black">Fresh from the Blog</div>
 
       {/* Blog Posts */}
       <div className="space-y-8">

@@ -15,9 +15,9 @@ export default function Events() {
     },
     {
       date: "2025-09-10",
-      heading: "NESA CAREER FAIR 2025",
-      details: "Career Fair",
-      location: "Unilag Multipurpose Hall",
+      heading: "NESA SPORTS FESTIVAL 2025",
+      details: "Sports",
+      location: "Sport Center",
       time: "10:00AM",
       image: "/images/Events/somelogo.png", // Replace with actual image URL
     },
@@ -31,7 +31,8 @@ export default function Events() {
       </div>
 
       {events.map((event, index) => (
-        <div key={index} className="flex flex-col md:flex-row items-center justify-between mb-16">
+       <div key={index}>
+         <div className="flex flex-col md:flex-row items-center justify-between mb-16">
           {/* Date Card */}
           <div className="w-[120px] h-[120px] flex-shrink-0 bg-[#fffdfb] border border-solid border-[#03045e] flex items-center justify-center">
             <div>
@@ -77,25 +78,35 @@ export default function Events() {
 
 
           </div>
+
         </div>
+
+        
+        <div>
+              {/* Decorative Line */}
+              <img
+              className="w-full max-w-[1160px] mx-auto h-px my-16 object-cover"
+              alt="Vector"
+              src="https://c.animaapp.com/WzNSGM6X/img/vector-33-1.svg"
+            />
+           </div>
+       </div>
+        
       ))}
 
-      {/* Decorative Line */}
-      <img
-        className="w-full max-w-[1160px] mx-auto h-px my-16 object-cover"
-        alt="Vector"
-        src="https://c.animaapp.com/WzNSGM6X/img/vector-33-1.svg"
-      />
+   
 
       {/* View All Section */}
       <div className="flex items-center justify-center space-x-4">
         <Link to="/events">
-        <Text className="text-xl text-[#d97213] font-normal">View all</Text>
+        <Text className="text-xl text-[#d97213] font-normal">View all
         <img
           className="w-[7.59px] h-[13.06px]"
           alt="Vector"
           src="https://c.animaapp.com/WzNSGM6X/img/vector-118.svg"
         />
+        </Text>
+      
         </Link>
       </div>
     </div>

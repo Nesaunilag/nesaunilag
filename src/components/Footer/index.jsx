@@ -15,16 +15,16 @@ export default function Footer({ ...props }) {
           <div className="flex items-center gap-3 w-[30vw]">
             <div className="bg-white p-1 rounded">
               <Img
-                className="w-12 h-[44.5px] object-cover"
+                className="w-[30px] h-7 lg:w-[43.1px] lg:h-10 object-cover"
                 alt="Image"
                 src={`${process.env.PUBLIC_URL}/images/nesa-removebg-preview 2.png`}
               />
             </div>
-            <div className="text-white text-xl font-semibold">
+            <div className="text-white leading-[20px] text-[12px] md:text-[16px] font-semibold">
               Nigerian Economics Students Association
             </div>
             <div className="hidden md:flex h-12 w-px bg-white mx-4" />
-            <div className="text-white text-xl font-normal">
+            <div className="text-white text-[12px] leading-[20px] w-[10vw] lg:text-[20px]">
               University of Lagos
             </div>
           </div>

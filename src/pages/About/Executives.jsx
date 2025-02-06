@@ -131,7 +131,7 @@ export default function Executives() {
       {
         name: "Jimoh Nimot Kofoworola",
         title: "Asst. Welfare Secretary",
-        imageUrl: "/images/Executives/-.jpg",
+        imageUrl: "/images/Executives/nimot.jpg",
         linkedin: "https://www.linkedin.com/in/nimot-jimoh-332106276/",
       },
       {
