@@ -21,10 +21,10 @@ export default function About() {
 
 
       <div className="flex justify-center">
-        <div className="container-sm flex justify-center md:px-5">
-            <div className="flex h-[602px] w-full flex-col items-center justify-center gap-[42px] rounded-[10px] bg-[#fcf5ed] bg-[url(/public/images/nesa-removebg-preview 2.png)] bg-cover bg-no-repeat px-14 py-16 md:h-auto md:p-5"> 
-                <div className="flex rounded-[10px] bg-[#ffffff] p-5 shadow-[8px_8px_64px_0_#00000019]">
-                    <Img src={`${process.env.PUBLIC_URL}/images/nesa-removebg-preview 2.png`} alt="Imageten" className="h-[148px] w-full object-cover md:h-auto" />
+        <div className="container-sm flex justify-center mt-16">
+            <div className="flex h-[402px] w-full flex-col items-center justify-center gap-[42px] rounded-[10px] bg-[#fcf5ed] bg-[url(/public/images/background.png)] bg-cover bg-no-repeat px-14 py-16 md:h-auto md:py-10"> 
+                <div className="">
+                    <Img src={`${process.env.PUBLIC_URL}/images/nesasLogo.png`} alt="Imageten" className="h-[148px] w-full object-cover md:h-auto" />
                 </div>
                 <Text
                     size="text4x1"
