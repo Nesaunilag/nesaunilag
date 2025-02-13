@@ -4,6 +4,7 @@ import { Home } from './pages/Home';
 import About from './pages/About';
 import Executives from './pages/About/Executives';
 import Alumni from './pages/About/Alumni';
+import Event from './pages/Events/Event';
 
 const ProjectRoutes = () => {
     const element = useRoutes([
@@ -22,6 +23,10 @@ const ProjectRoutes = () => {
         {
             path: '/alumni',
             element: <Alumni />,
+        },
+        {
+            path: '/event',
+            element: <Event />,
         }
     ]);
     return element;
