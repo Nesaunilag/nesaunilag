@@ -11,6 +11,7 @@ import Alumni from './pages/About/Alumni';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import Error404 from './pages/Error404';
+import Event from './pages/Events/Event';
 
 const ProjectRoutes = () => {
     const element = useRoutes([
@@ -49,6 +50,10 @@ const ProjectRoutes = () => {
         {
             path: '*',
             element: <Error404 />
+        },
+        {
+            path: '/event',
+            element: <Event />,
         }
     ]);
     return element;

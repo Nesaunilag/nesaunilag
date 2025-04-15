@@ -3,6 +3,7 @@ import MegaMenu2 from "../MegaMenu2";
 import { Button, Img, Text } from "./..";
 import { Link } from "react-router-dom"; // Import Link
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Header({ ...props }) {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -60,7 +61,7 @@ export default function Header({ ...props }) {
             {/* SecondDiv: Menu Items - Hidden on mobile, visible on larger screens */}
             <ul className={`hidden md:flex flex-wrap justify-center gap-6`}>
               <li>
-                <a href="#">
+                <a href="/">
                   <Text
                     size="textmd"
                     as="p"
@@ -95,13 +96,16 @@ export default function Header({ ...props }) {
                 onMouseEnter={() => setMenuOpen1(true)}
               >
                 <div className="flex cursor-pointer items-center">
-                  <Text
-                    size="textmd"
-                    as="p"
-                    className="text-[16px] font-light text-[#000000] whitespace-nowrap overflow-hidden text-ellipsis"
-                  >
-                    Events
-                  </Text>
+                <Link to="/event">
+                      <Text
+                        size="textmd"
+                        as="p"
+                        className="text-[16px] font-light text-[#000000] whitespace-nowrap overflow-hidden text-ellipsis"
+                      >
+                        Events
+                      </Text>
+                    </Link>
+                  
                   <img
                     src={`${process.env.PUBLIC_URL}/images/Vector Dropdown.svg`}
                     alt="Vector"
@@ -171,7 +175,7 @@ export default function Header({ ...props }) {
             >
               <ul className="flex flex-col items-center gap-4 py-6">
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <Text
                       size="textmd"
                       as="p"
@@ -210,7 +214,7 @@ export default function Header({ ...props }) {
                   </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/">
                     <Text
                       size="textmd"
                       as="p"
