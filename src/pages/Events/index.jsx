@@ -14,7 +14,7 @@ export default function EventsPage() {
                     <Heading
                     size="heading3x1"
                     as="h1"
-                    className="text-[48px] font-bold !text-[#ffffff] md:text-[44px] sm:text-[38px]"
+                    className="text-[25px] px-5 font-bold !text-[#ffffff] md:text-[44px] sm:text-[38px]"
                     >
                     EXPLORE OUR EVENTS
                     </Heading>

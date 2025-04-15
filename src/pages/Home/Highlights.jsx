@@ -68,7 +68,7 @@ export default function Highlights() {
   return (
     <div className="w-full h-full bg-white py-10 px-4 md:px-20 overflow-hidden">
       {/* Department Highlights Header */}
-      <div className="text-5xl font-medium text-black mb-10">Department Highlights</div>
+      <div className="lg:text-[40px] text-[24px] font-bold text-black mb-10">Department Highlights</div>
 
       {/* Static Highlights Section */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -149,21 +149,21 @@ export default function Highlights() {
       </div>
 
       {/* Fresh from the Blog Header */}
-      <div className="mt-40 mb-10 text-5xl font-medium text-black">Fresh from the Blog</div>
+      <div className="mt-40 mb-10 lg:text-[40px] text-[24px] font-bold text-black">Fresh from the Blog</div>
 
       {/* Blog Posts */}
       <div className="space-y-8">
       {blogPosts.map((post) => (
-        <div key={post.id} className="flex flex-col md:flex-row bg-[#fffbf6] shadow-lg p-6">
+        <div key={post.id} className="flex flex-row bg-[#fffbf6] shadow-lg p-6">
           <div className="flex-grow">
-            <p className="text-[32px] font-normal text-black mb-4">{post.title}</p>
+            <p className="text-[20px] lg:text-[30px] font-normal text-black mb-4">{post.title}</p>
             <Link to={`/blog/${post.id}`} className="text-xl italic text-[#03045e]">
               Read More...
             </Link>
           </div>
-          <div className="w-[200px] h-[150px] bg-[#d97213] flex items-center justify-center text-white">
+          <div className="w-[100px] h-[80px] lg:w-[200px] lg:h-[150px] bg-[#d97213] flex items-center justify-center text-white">
             <div>
-              <div className="text-5xl font-medium">{post.dateCreated?.split("-")[2]}</div>
+              <div className="text-3xl lg:text-5xl font-medium">{post.dateCreated?.split("-")[2]}</div>
               <div className="text-2xl">
                 {new Date(post.dateCreated).toLocaleString("default", { month: "short" })}
               </div>
@@ -190,7 +190,7 @@ export default function Highlights() {
 
       {/* Subscription Section */}
       <div className="bg-[#03045e] text-white py-10 mt-20">
-        <p className="text-[32px] font-medium text-center mb-4">Stay updated with NESA, UNILAG</p>
+        <p className="text-[24px] lg:text-[34px] font-medium text-center mb-4">Stay updated with NESA, UNILAG</p>
         <img
           className="mx-auto w-[628px] h-px mb-6"
           alt="Line"

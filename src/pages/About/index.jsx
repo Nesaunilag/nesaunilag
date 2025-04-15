@@ -12,7 +12,7 @@ export default function About() {
           <Heading
             size="heading3xl"
             as="h1"
-            className="font-bold text-[#ffff] md:text-[44px] sm:text-[38px]"
+            className="font-bold text-[#ffff] px-5 lg:px-0 text-[25px] md:text-[44px] sm:text-[38px]"
           >
             GET TO KNOW US
           </Heading>

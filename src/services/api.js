@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Base URL for the API
 const API = axios.create({
-  baseURL: 'https://faculty-backend-55jd.onrender.com',
+  baseURL: 'https://faculty-backend-3ii4.onrender.com',
 });
 
 // API Methods

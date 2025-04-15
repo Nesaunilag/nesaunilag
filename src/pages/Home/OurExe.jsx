@@ -1,12 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom"; // Import Link
+import axios from "axios";
 import "./style.css";
 
 export default function OurExe() {
-  const scrollContainerRef = useRef(null);
-
-  // Static frontend data for executives
-  const executives = [
+   // Static frontend data for executives
+   const executives = [
     {
       name: "Temidayo Ogunmuyiwa",
       title: "President",
@@ -99,6 +98,9 @@ export default function OurExe() {
     },
   ];
 
+  const scrollContainerRef = useRef(null);
+
+
   useEffect(() => {
     if (executives.length > 0) {
       const container = scrollContainerRef.current;
@@ -108,13 +110,14 @@ export default function OurExe() {
         const firstChild = container.firstElementChild;
         container.appendChild(firstChild);
 
-        // Reset the animation to maintain a seamless loop
+        // Reset the animation to maintain seamless loop
         container.style.animation = "none";
         requestAnimationFrame(() => {
           container.style.animation = "";
         });
       };
 
+      // Attach the animationend event
       container.addEventListener("animationend", handleAnimationEnd);
 
       return () => {
@@ -126,23 +129,19 @@ export default function OurExe() {
   return (
     <div className="w-full relative bg-white h-[742px] overflow-hidden text-center text-[48px] text-black font-open-sans">
       <div className="flex flex-row justify-between py-16 px-8">
-        <div className="items-center justify-center text-left text-[24px] lg:text-[24px] xl:text-[48px] font-neue-haas-grotesk-text-pro">
-          Our Executives
-        </div>
+        <div className="items-center justify-center text-left text-[24px] lg:text-[24px] xl:text-[48px] font-neue-haas-grotesk-text-pro">Our Executives</div>
         <div className="flex flex-row items-center justify-start gap-2.5 text-xl text-chocolate">
-          <Link to="/executives" className="font-sans text-chocolate text-[24px]">
-            View all
-          </Link>
-          <img className="w-1.5 relative h-3" alt="" src="Vector.svg" />
-        </div>
+            <Link to="/executives" className="font-sans text-chocolate text-[24px]">View all</Link>
+            <img className="w-1.5 relative h-3" alt="" src="Vector.svg" />
+          </div>
       </div>
-      <div className="absolute top-[172px] flex flex-row items-center justify-start gap-5 text-5xl">
+        <div className="absolute top-[172px] flex flex-row items-center justify-start gap-5 text-5xl">
           <div className="scroll-container">
                 <div className="scroll-content" ref={scrollContainerRef}>
                   {executives.map((exec, index) => (
                     <div
                       key={index}
-                      className="w-[85vw] md:w-[70vw] lg:w-[25vw] relative rounded-[30px] bg-[#fcf5ed] gap-28 bg-seashell h-[502px] overflow-hidden shrink-0 text-center text-[24px] text-black font-open-sans"
+                      className="w-[70vw] md:w-[70vw] lg:w-[25vw] relative rounded-[30px] bg-[#fcf5ed] gap-28 bg-seashell h-[502px] overflow-hidden shrink-0 text-center text-[24px] text-black font-open-sans"
                     >
                       <div
                         className="w-full h-[350px] top-0 left-0 bg-[#d9d9d9] bg-cover bg-center bg-no-repeat"
@@ -172,10 +171,3 @@ export default function OurExe() {
     </div>
   );
 }
-
-
-
-
-
-
-

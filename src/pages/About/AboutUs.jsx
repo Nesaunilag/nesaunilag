@@ -15,7 +15,7 @@ const accordionData = [
 export default function AboutUs() {
   return (
     <div className="flex flex-col items-center px-2 md:px-0">
-      <div className="container-sm md:px-5">
+      <div className="container-sm px-5 md:px-5">
         {/* Who we are Section */}
         <div>
           <div className="flex flex-col md:flex-row items-center gap-8  mt-16">

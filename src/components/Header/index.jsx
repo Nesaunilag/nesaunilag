@@ -3,7 +3,6 @@ import MegaMenu2 from "../MegaMenu2";
 import { Button, Img, Text } from "./..";
 import { Link } from "react-router-dom"; // Import Link
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function Header({ ...props }) {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -119,13 +118,15 @@ export default function Header({ ...props }) {
                 onMouseEnter={() => setMenuOpen2(true)}
               >
                 <div className="flex cursor-pointer items-center gap-1">
-                  <Text
+                 <Link to="/newsblogs">
+                 <Text
                     size="textmd"
                     as="p"
                     className="text-[16px] font-light text-[#000000] whitespace-nowrap overflow-hidden text-ellipsis"
                   >
                     News & Blogs
                   </Text>
+                 </Link>
                   <img
                     src={`${process.env.PUBLIC_URL}/images/Vector Dropdown.svg`}
                     alt="Vector"
@@ -170,84 +171,56 @@ export default function Header({ ...props }) {
           {/* Hamburger Menu Items - Visible only when the hamburger menu is open */}
           {hamburgerOpen && (
             <div
-              className="absolute top-[70px] left-0 w-full bg-white shadow-md z-50 md:hidden transition-transform duration-300 ease-in-out"
+              className="absolute h-[100vh] top-[70px] left-0 w-full bg-white shadow-md z-50 md:hidden transition-transform duration-300 ease-in-out"
               style={{ backgroundColor: "#f8f8f8" }}
             >
-              <ul className="flex flex-col items-center gap-4 py-6">
+              <ul className="flex flex-col items-start gap-8 py-6 px-3">
                 <li>
-                  <a href="/">
-                    <Text
-                      size="textmd"
-                      as="p"
-                      className="text-[16px] font-light text-[#000000] whitespace-nowrap overflow-hidden text-ellipsis"
-                    >
+                  <a href="/" onClick={() => setHamburgerOpen(false)}>
+                    <Text size="textmd" as="p" className="text-[16px] font-light text-[#000000]">
                       Home
                     </Text>
                   </a>
                 </li>
                 <li>
-                  <Link to="/about">
-                    <Text
-                      size="textmd"
-                      as="p"
-                      className="text-[16px] font-light text-[#000000] whitespace-nowrap overflow-hidden text-ellipsis"
-                    >
+                  <Link to="/about" onClick={() => setHamburgerOpen(false)}>
+                    <Text size="textmd" as="p" className="text-[16px] font-light text-[#000000]">
                       About
                     </Text>
                   </Link>
                 </li>
-
-
-
-            
-
-
                 <li>
-                  <Link to="/events">
-                    <Text
-                      size="textmd"
-                      as="p"
-                      className="text-[16px] font-light text-[#000000] whitespace-nowrap overflow-hidden text-ellipsis"
-                    >
+                  <Link to="/events" onClick={() => setHamburgerOpen(false)}>
+                    <Text size="textmd" as="p" className="text-[16px] font-light text-[#000000]">
                       Events
                     </Text>
                   </Link>
                 </li>
                 <li>
-                  <a href="/">
-                    <Text
-                      size="textmd"
-                      as="p"
-                      className="text-[16px] font-light text-[#000000] whitespace-nowrap overflow-hidden text-ellipsis"
-                    >
+                  <a href="/" onClick={() => setHamburgerOpen(false)}>
+                    <Text size="textmd" as="p" className="text-[16px] font-light text-[#000000]">
                       News & Blogs
                     </Text>
                   </a>
                 </li>
                 <li>
-                  <Link to="/gallery">
-                    <Text
-                      size="textmd"
-                      as="p"
-                      className="text-[16px] font-light text-[#000000] whitespace-nowrap overflow-hidden text-ellipsis"
-                    >
+                  <Link to="/gallery" onClick={() => setHamburgerOpen(false)}>
+                    <Text size="textmd" as="p" className="text-[16px] font-light text-[#000000]">
                       Gallery
                     </Text>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact">
-                  <Button
-                    size="sm"
-                    className="min-w-[166px] gap-1 rounded-[22px] px-5 font-semibold bg-chocolate text-white"
-                  >
-                    Get in Touch
-                  </Button>
+                  <Link to="/contact" onClick={() => setHamburgerOpen(false)}>
+                    <Button size="sm" className="min-w-[166px] gap-1 rounded-[22px] px-5 font-semibold bg-chocolate text-white">
+                      Get in Touch
+                    </Button>
                   </Link>
                 </li>
               </ul>
             </div>
           )}
+
         </div>
       </div>
     </header>

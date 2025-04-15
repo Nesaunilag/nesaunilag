@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import Error404 from './pages/Error404';
 import Event from './pages/Events/Event';
+import NewsBlogs from './pages/NewsBlogs';
 
 const ProjectRoutes = () => {
     const element = useRoutes([
@@ -54,6 +55,10 @@ const ProjectRoutes = () => {
         {
             path: '/event',
             element: <Event />,
+        },
+        {
+            path: '/newsblogs',
+            element: <NewsBlogs />
         }
     ]);
     return element;

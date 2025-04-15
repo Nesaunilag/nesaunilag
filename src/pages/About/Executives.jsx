@@ -149,7 +149,7 @@ export default function Executives() {
     <div className="flex flex-col">
       {/* Section Header */}
       <div className="flex justify-center bg-[#d97213] py-12 md:py-5 gap-1">
-        <div className="container-sm flex md:px-5">
+        <div className="container-sm flex px-5">
           <Heading
             size="heading3xl"
             as="h1"
@@ -214,7 +214,7 @@ export default function Executives() {
               <AccordionItemPanel>
                 <div className="w-[100wv]">
                   <div className="w-[100%]">
-                    <img className="w-[100%] lg:w-full" src={`${process.env.PUBLIC_URL}/images/executives/exco_past_full.png`} alt="Past Executives Image" />
+                    <img className="w-[100%] lg:w-full" src={`${process.env.PUBLIC_URL}/images/Executives/exco_past_full.png`} alt="Past Executives Image" />
                   </div>
                 </div>
               </AccordionItemPanel>

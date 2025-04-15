@@ -26,7 +26,7 @@ export default function Events() {
   return (
     <div className="relative w-full h-auto bg-white py-10 px-4 md:px-20">
       {/* Header - Upcoming Events */}
-      <div className="text-5xl font-medium text-black text-left mb-10 md:mb-0">
+      <div className="lg:text-[40px] text-[24px] font-bold text-black text-left mb-10 md:mb-0">
         Upcoming Events
       </div>
 
@@ -53,10 +53,28 @@ export default function Events() {
 
           {/* Event Info */}
           <div className="flex-grow ml-6 md:ml-10">
-            <div className="text-2xl text-black mb-2">{event.details}</div>
+           
+          <div className="text-2xl text-black mb-2">{event.details}</div>
+
+
             <div className="text-[32px] font-medium text-black mb-2">{event.heading}</div>
-            <div className="text-2xl text-black mb-2">{event.location}</div>
-            <div className="text-2xl text-black">{event.time}</div>
+
+          <div className="text-2xl text-black mb-2"> 
+             <img
+              className="w-[2%]"
+              alt="Vector"
+              src="/images/svg/mdi_location.svg"
+            /> {event.location}</div>
+            
+            
+            <div className="text-2xl text-black">
+            <img
+              className=" w-[2%]"
+              alt="Vector"
+              src="/images/svg/tdesign_time-filled.svg"
+            /> {event.time}</div>
+
+
           </div>
 
           {/* Buttons */}

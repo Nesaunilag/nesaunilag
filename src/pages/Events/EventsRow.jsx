@@ -4,7 +4,7 @@ import React from "react";
 export default function EventsRow() {
   return (
     <div className="flex justify-center bg-[#d97213] py-12 md:py-5">
-      <div className="container-sm flex md:px-5">
+      <div className="container-sm flex px-5">
         <Heading
           size="heading3x1"
           as="h1"
