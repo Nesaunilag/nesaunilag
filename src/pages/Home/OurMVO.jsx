@@ -14,10 +14,10 @@ export default function OurMVO () {
 
     return (
 
-        <div className="flex flex-col w-full gap-2.5 relative bg-[#fffbf6] h-[auto] overflow-x-hidden">
+        <div className="flex flex-col w-full gap-2.5 relative bg-[#fffbf6] h-[auto] overflow-hidden">
           <div className="flex flex-wrap gap-[20px_20px] relative self-stretch w-full flex-[0_0_auto]">
 
-            <div className="flex flex-col min-w-[300px] items-start gap-2.5 px-10 py-9 relative flex-1 grow bg-[#fs] rounded-[10px] overflow-hidden shadow-[5px_5px_20px_2px_#0000001a]" data-aos="slide-right">
+            <div className="flex flex-col min-w-[250px] items-start gap-2.5 px-10 py-9 relative flex-1 grow bg-[#fs] rounded-[10px] overflow-hidden shadow-[5px_5px_20px_2px_#0000001a]" data-aos="slide-right">
               <div className="flex flex-col items-center gap-5 relative self-stretch w-full flex-[0_0_auto]">
                 <img
                   className="relative w-[70px] h-[70px] object-cover"
@@ -53,7 +53,7 @@ export default function OurMVO () {
               </div>
             </div>
 
-            <div className="flex flex-col min-w-[300px] items-start gap-2.5 px-10 py-9 relative flex-1 grow bg-[#fcf5ed] rounded-[10px] overflow-hidden shadow-[5px_5px_20px_2px_#0000001a]" data-aos="slide-left">
+            <div className="flex flex-col min-w-[300px] items-start gap-2.5 px-10 py-9 relative flex-1 grow bg-[#fcf5ed] rounded-[10px] overflow-hidden shadow-[5px_5px_20px_2px_#0000001a]" data-aos="slide-up">
               <div className="flex flex-col items-center gap-5 relative self-stretch w-full flex-[0_0_auto]">
                 <img
                   className="relative w-[70px] h-[70px] object-cover"

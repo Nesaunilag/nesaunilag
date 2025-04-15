@@ -17,7 +17,7 @@ import Socials from "./Socials";
 
 export const Home = () => {
   return (
-    <div className="home flex flex-row justify-center w-full">
+    <div className="home flex flex-row justify-center w-full overflow-x-hidden">
       <div className="bg-[#fffbf6] w-full relative">
 
         <div>

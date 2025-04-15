@@ -17,7 +17,7 @@ export default function Spotlight() {
     <div className="w-full relative bg-[#fffbf6] min-h-full py-10 px-4 md:px-20 flex flex-col">
       {/* Spotlight Image Container */}
       <div className="relative mx-auto max-w-[395px] h-[auto] md:h-[520px] flex flex-1">
-        <div className="absolute w-[355px] h-[500px] top-5 left-5 border-[10px] border-solid border-[#d97213]" />
+        <div className="absolute w-[285px] lg:w-[330px] h-[500px] top-5 left-5 border-[10px] border-solid border-[#d97213]" />
         <div
           className="relative w-[90%] h-[500px] bg-[#fbf2e9] img-card"
           data-aos="flip-right"

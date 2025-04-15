@@ -7,7 +7,7 @@ export default function Sponsor() {
         <div className="relative w-full min-h-screen sm:bg-[#d97213] h-[724px] flex flex-col lg:flex-row items-center justify-center lg:px-0">
             {/* Sponsor Heading */}
             <p className="w-full max-w-lg lg:max-w-2xl text-center lg:text-right font-medium text-white text-4xl lg:text-5xl tracking-normal leading-tight">
-                Would you like to sponsor our events?
+                Hey, Would you like to sponsor our events?
             </p>
 
             {/* Contact Button */}
