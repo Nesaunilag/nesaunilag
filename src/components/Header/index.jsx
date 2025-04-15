@@ -197,11 +197,11 @@ export default function Header({ ...props }) {
                   </Link>
                 </li>
                 <li>
-                  <a href="/newsblogs" onClick={() => setHamburgerOpen(false)}>
+                  <Link to="/newsblogs" onClick={() => setHamburgerOpen(false)}>
                     <Text size="textmd" as="p" className="text-[16px] font-light text-[#000000]">
                       News & Blogs
                     </Text>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link to="/gallery" onClick={() => setHamburgerOpen(false)}>
