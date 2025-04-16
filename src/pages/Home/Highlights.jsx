@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import highlight1 from "../../images/department-highlight-1.jpeg"
+import highlight1 from "../../images/nesa_anime_fanclub.jpeg"
 import highlight2 from "../../images/nesa-removebg-preview 2.png"
 import { Component18 } from "../../components/Component18";
 import { Link } from "react-router-dom"; // Import Link
@@ -82,35 +82,20 @@ export default function Highlights() {
           }} />
           <div className="bg-[#fffdfb] p-6">
             <p className="text-2xl font-normal text-black mb-4">
-            SCREAMS IN ACADEMIC DANGER 😭
+            Join the NESA Anime Fandom
 
             </p>
-            <p>View more</p>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+            <img
+              className="h-12"
+              alt="Frame"
+              src="/images/svg/whatsapp.svg"
+            />
+          </a>
            
            
            <div className="flex flex-row justify-between">
-           <a href="https://www.linkedin.com/in/samuel-aribigbola-ab6a01214/" target="_blank">
             
-                Instagram
-
-
-          </a>
-
-
-
-          <a href="https://www.linkedin.com/in/samuel-aribigbola-ab6a01214/" target="_blank">
-            
-            X
-
-          </a>
-
-
-
-          <a href="https://www.linkedin.com/in/samuel-aribigbola-ab6a01214/" target="_blank">
-            
-            Tiktok
-
-          </a>
            </div>
 
 
