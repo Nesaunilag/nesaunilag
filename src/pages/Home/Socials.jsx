@@ -15,7 +15,7 @@ import { EffectCards } from 'swiper/modules';
 export default function Socials() {
   return (
     <>
-      <div className='relative w-full bg-[#d97213] h-auto flex flex-col lg:flex-row items-center justify-center px-4 lg:px-24 xl:px-36 gap-4 xl:gap-32'>
+      <div className='relative w-full bg-[#d97213] h-auto flex flex-col lg:flex-row items-center justify-center py-5 px-4 lg:px-24 xl:px-36 gap-4 xl:gap-32'>
 
 
       <Swiper

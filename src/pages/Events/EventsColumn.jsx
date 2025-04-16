@@ -11,17 +11,17 @@ export default function Desktop11Column() {
         </Heading>
         <div className="flex flex-col gap-[30px] self-stretch">
           <ExpeditionConference
-            conferenceTitle="THE EXPEDITION CONFERENCE 9.0"
-            conferenceDescription="Get ready for an immersive learning experience like no other."
-            theme="IGNITING POTENTIALS AND SEIZING FUTURE OPPORTUNITIES"
-            conferenceImg="/images/Events/TEC 9.0.jpg"
+            conferenceTitle="NESA SPORT FESTIVAL"
+            conferenceDescription=""
+            theme=""
+            conferenceImg="/images/Events/sport.jpeg"
             conferenceIG="https://instagram.com/expedition"
           />
 
           <ExpeditionConference
             conferenceTitle="NESA ECONOMIC DISCOURSE"
             conferenceDescription="Where thought leaders converge to shape tomorrow’s economics."
-            theme="HARNESSING KNOWLEDGE, DRIVING CHANGE"
+            theme=""
             conferenceImg="/images/Events/ned.png"
             conferenceIG="https://instagram.com/nesaed"
           />

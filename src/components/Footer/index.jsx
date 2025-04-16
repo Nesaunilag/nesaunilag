@@ -6,7 +6,7 @@ export default function Footer({ ...props }) {
   return (
     <footer
       {...props}
-      className={`${props.className} flex justify-center items-center py-[50px] md:py-5 bg-[#d97213]`}
+      className={`${props.className} flex justify-center items-center pmd:py-5 bg-[#d97213]`}
     >
       <div className="relative w-full h-auto bg-[#d97213] py-8 px-4 md:px-10 lg:px-20">
         {/* Top Section */}
@@ -101,11 +101,62 @@ export default function Footer({ ...props }) {
 
           {/* Social Media Icons (example with placeholder image) */}
          <div className="hidden lg:flex items-center gap-4 justify-center">
-          <img
-            className="w-[232px] h-8"
-            alt="Frame"
-            src="https://c.animaapp.com/WzNSGM6X/img/frame-185.svg"
-          />
+         <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+            <img
+              className="h-8"
+              alt="Frame"
+              src="/images/svg/whatsapp.svg"
+            />
+          </a>
+
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img
+              className="h-8"
+              alt="Frame"
+              src="/images/svg/instagram.svg"
+            />
+          </a>
+          
+
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <img
+              className="h-8"
+              alt="Frame"
+              src="/images/svg/twitter.svg"
+            />
+          </a>
+
+
+
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img
+              className="h-8"
+              alt="Frame"
+              src="/images/svg/linkedin.svg"
+            />
+          </a>
+
+
+          
+
+
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+            <img
+              className="h-8"
+              alt="Frame"
+              src="/images/svg/tiktok.svg"
+            />
+          </a>
+
+
+
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <img
+              className="h-8"
+              alt="Frame"
+              src="/images/svg/youtube.svg"
+            />
+          </a>
           
           </div>
 
@@ -117,13 +168,64 @@ export default function Footer({ ...props }) {
 
 
          {/* Social Media Icons (example with placeholder image) */}
-         <div className="pt-4 flex lg:hidden items-center gap-4 justify-center">
-          <img
-            className="w-[232px] h-8"
-            alt="Frame"
-            src="https://c.animaapp.com/WzNSGM6X/img/frame-185.svg"
-          />
+         <div className="pt-4 flex px-1 flex-row lg:hidden items-center gap-1 justify-center">
           
+          <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+            <img
+              className="h-8"
+              alt="Frame"
+              src="/images/svg/whatsapp.svg"
+            />
+          </a>
+
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <img
+              className="h-8"
+              alt="Frame"
+              src="/images/svg/instagram.svg"
+            />
+          </a>
+          
+
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <img
+              className="h-8"
+              alt="Frame"
+              src="/images/svg/twitter.svg"
+            />
+          </a>
+
+
+
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img
+              className="h-8"
+              alt="Frame"
+              src="/images/svg/linkedin.svg"
+            />
+          </a>
+
+
+          
+
+
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+            <img
+              className="h-8"
+              alt="Frame"
+              src="/images/svg/tiktok.svg"
+            />
+          </a>
+
+
+
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <img
+              className="h-8"
+              alt="Frame"
+              src="/images/svg/youtube.svg"
+            />
+          </a>
           </div>
          
       </div>

@@ -137,7 +137,7 @@ export default function Executives() {
       {
         name: "Adesina Oluwatobiloba",
         title: "Librarian",
-        imageUrl: "/images/Executives/tobi.jpg",
+        imageUrl: "/images/Executives/tobii.jpg",
         linkedin: "https://www.linkedin.com/in/",
       },
     ];

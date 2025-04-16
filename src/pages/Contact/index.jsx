@@ -10,7 +10,19 @@ import { image } from "framer-motion/client";
 const data = [
   { emailLabel: "Email", emailAddress: "Nesaunilagblog@gmail.com", icon: "/images/svg/email.svg" }, 
   { emailLabel: "Call", emailAddress: "+2347066163148", icon: "/images/svg/call.svg" },
-  { emailLabel: "", emailAddress: "", whatsapp: "/images/svg/whatsapp.svg", instagram: "/images/svg/instagram.svg", twitter: "/images/svg/twitter.svg", linkedin: "/images/svg/linkedin.svg", tiktok: "/images/svg/tiktok.svg", youtube: "/images/svg/youtube.svg", },
+  {
+    emailLabel: "",
+    emailAddress: "",
+    socials: [
+      { name: "whatsapp", icon: "/images/svg/whatsapp.svg", url: "https://wa.me/2347066163148" },
+      { name: "instagram", icon: "/images/svg/instagram.svg", url: "https://instagram.com/nesaunilag" },
+      { name: "twitter", icon: "/images/svg/twitter.svg", url: "https://twitter.com/nesaunilag" },
+      { name: "linkedin", icon: "/images/svg/linkedin.svg", url: "https://linkedin.com/in/nesaunilag" },
+      { name: "tiktok", icon: "/images/svg/tiktok.svg", url: "https://tiktok.com/@nesaunilag" },
+      { name: "youtube", icon: "/images/svg/youtube.svg", url: "https://youtube.com/@nesaunilag" },
+    ],
+    icon: "",
+  },  
   {
     emailLabel: "Address",
     emailAddress: (
@@ -89,7 +101,7 @@ export default function Contact() {
                   <textarea id="message" name="message" placeholder="Message" />
                 </div>
                 <Link to="/*">
-                  <Button type="submit" size="3x1" className="min-w-[168px] bg-blue-900 text-white rounded-[30px] px-[34px] font-semibold sm:px-5">Submit</Button>
+                  <Button type="submit" size="3x1" className="min-w-[168px] bg-[#d97213] text-white rounded-[30px] px-[34px] font-semibold sm:px-5">Submit</Button>
                 </Link>
               </form>
 

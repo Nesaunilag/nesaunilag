@@ -4,9 +4,9 @@ import React, { Suspense } from "react";
 
 const data = [
   {
-    eventTitle: "NESA DINNER AND AWARDS NIGHT",
-    image: "/images/Events/nesa-dinner.jpg",
-    Ig: "https://linkedin.com/in/nesa-dinner"
+    eventTitle: "THE EXPEDITION CONFERENCE 9.0",
+    image: "/images/Events/TEC 9.0.jpg",
+    Ig: "https://instagram.com/expedition"
   },
   {
     eventTitle: "NESA CAREER FAIR",

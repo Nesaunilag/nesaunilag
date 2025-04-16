@@ -20,6 +20,7 @@ export default function Header({ ...props }) {
         <div className="w-full relative bg-white h-[76px] text-left text-base text-black font-open-sans">
           <div className="flex justify-between items-center w-full h-[70px]">
             {/* FirstDiv: Logo and Association Name */}
+            <Link to="/">
             <div className="flex items-center">
               <Img
                 className="w-[30px] h-7 lg:w-[43.1px] lg:h-10 object-cover"
@@ -34,10 +35,11 @@ export default function Header({ ...props }) {
                 src={`${process.env.PUBLIC_URL}/images/Vector 8.svg`}
                 alt=""
               />
-              <h3 className="ml-1 text-[12px] leading-[20px] w-[10vw] md:text-lg lg:text-3xl">
+              <h3 className="ml-1 text-[12px] leading-[20px] w-[10vw] lg:w-[4vw] text-black md:text-lg lg:text-3xl">
                 University of Lagos
               </h3>
             </div>
+            </Link>
 
             {/* Hamburger Menu Icon - Visible only on mobile */}
             <div className="md:hidden">
@@ -117,7 +119,7 @@ export default function Header({ ...props }) {
                 onMouseLeave={() => setMenuOpen2(false)}
                 onMouseEnter={() => setMenuOpen2(true)}
               >
-                <div className="flex cursor-pointer items-center gap-1">
+                
                  <Link to="/newsblogs">
                  <Text
                     size="textmd"
@@ -127,14 +129,8 @@ export default function Header({ ...props }) {
                     News & Blogs
                   </Text>
                  </Link>
-                  <img
-                    src={`${process.env.PUBLIC_URL}/images/Vector Dropdown.svg`}
-                    alt="Vector"
-                    className="h-[3px] w-[6px]"
-                  />
-                </div>
-                {menuOpen2 ? <MegaMenu1 /> : null}
               </li>
+
               <li>
                 <Link to="/gallery">
                   <Text

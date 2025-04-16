@@ -6,7 +6,7 @@ import "./style.css";
 export default function Events() {
   const events = [
     {
-      date: "2025-08-22",
+      date: "2025-05-06",
       heading: "NESA ECONOMIC DISCOURSE 8.0",
       details: "NED",
       location: "Unilag Main Auditorium",
@@ -14,12 +14,12 @@ export default function Events() {
       image: "/images/Events/NED.png", // Replace with actual image URL
     },
     {
-      date: "2025-09-10",
+      date: "2025-05-27",
       heading: "NESA SPORTS FESTIVAL 2025",
       details: "Sports",
       location: "Sport Center",
-      time: "10:00AM",
-      image: "/images/Events/somelogo.png", // Replace with actual image URL
+      time: "-",
+      image: "/images/Events/sport.jpeg", // Replace with actual image URL
     },
   ];
 

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Text, Button, Heading, Img } from "../../components";
+import { Link } from "react-router-dom"; // Import Link
 import "./style.css"
 import { Frame } from "../../components/Frame";
 import { Frame475 } from "../../components/Frame475";
@@ -42,11 +43,13 @@ export default function Hero () {
                       <span className="text-[#d97213]">Economics</span>
                       <span className="text-black"> Thoughts</span> <br />
 
+                      <Link to="/about">
                       <button className="inline-flex items-center justify-center gap-2.5 px-[50px] py-[15px] bg-[#03045e] rounded-[600px]">
                         <a href="" className="mt-[-1.00px] [font-family:'Open_Sans',Helvetica] text-white text-xl text-center tracking-[0] leading-[normal]">
                           Explore
                         </a>
                       </button>
+                      </Link>
                     </p>
                     
                   
