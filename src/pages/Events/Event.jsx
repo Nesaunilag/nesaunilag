@@ -12,7 +12,7 @@ const Event = () => {
         link: "https://instagram.com/expedition",
       },
       {
-        Image: "/images/Events/ned.png",
+        Image: "/images/Events/NED.png",
         Title: "NESA ECONOMIC DISCOURSE",
         Description:
           "Where thought leaders converge to shape tomorrow’s economics.",
