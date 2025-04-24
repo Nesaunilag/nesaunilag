@@ -107,13 +107,7 @@ export default function Header({ ...props }) {
                       </Text>
                     </Link>
                   
-                  <img
-                    src={`${process.env.PUBLIC_URL}/images/Vector Dropdown.svg`}
-                    alt="Vector"
-                    className="h-[3px] w-[6px]"
-                  />
                 </div>
-                {menuOpen1 ? <MegaMenu2 /> : null}
               </li>
               <li
                 onMouseLeave={() => setMenuOpen2(false)}
@@ -186,7 +180,7 @@ export default function Header({ ...props }) {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/events" onClick={() => setHamburgerOpen(false)}>
+                  <Link to="/event" onClick={() => setHamburgerOpen(false)}>
                     <Text size="textmd" as="p" className="text-[16px] font-light text-[#000000]">
                       Events
                     </Text>

@@ -29,8 +29,15 @@ export default function About() {
                 <Text
                     size="text4x1"
                     as="p"
-                    className="font-bold text-[#d97213] md:text-[30px] sm:text-[28px]">
+                    className="hidden lg:flex font-bold text-[#d97213] md:text-[30px] sm:text-[28px]">
                     NIGERIAN ECONOMICS STUDENT ASSOCIATION, UNILAG
+                </Text>
+
+                <Text
+                    size="text4x1"
+                    as="p"
+                    className="lg:hidden flex font-bold text-[#d97213] md:text-[30px] sm:text-[28px]">
+                    NESA, UNILAG
                 </Text>
             </div>
         </div>

@@ -161,14 +161,14 @@ export default function Executives() {
       </div>
 
       {/* Executives Grid */}
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center px-5">
         <div className="container-sm flex flex-col items-start gap-[34px] md:px-5">
-          <Heading
+          <Text
             as="h2"
-            className="font-['Neue_Haas_Grotesk_Text_Pro'] text-[48px] font-bold text-[#000000] md:text-[44px] sm:text-[38px]"
+            className="text-[20px] mt-[3%]  font-semibold text-[#000000] md:text-[44px] sm:text-[38px]"
           >
             NESA Executives 24/25
-          </Heading>
+          </Text>
           <div className="grid grid-cols-1 gap-[18px] self-stretch md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-2">
             <Suspense fallback={<div>Loading feed...</div>}>
               {executives.map((exec, index) => (
@@ -195,16 +195,16 @@ export default function Executives() {
                   <AccordionItemState>
                     {({ expanded }) => (
                       <div className="flex items-center justify-between gap-5 bg-[#fffdfb] px-[60px] py-[38px] shadow-[4px_4px_20px_#0000001a]">
-                        <Heading
+                        <Text
                           as="h4"
-                          className="text-[48px] font-semibold text-[#000000] md:text-[44px] sm:text-[38px]"
+                          className="text-[20px] font-semibold text-[#000000] md:text-[44px] sm:text-[38px]"
                         >
                           NESA Executives 23/24
-                        </Heading>
+                        </Text>
                         <Img
                           src={`${process.env.PUBLIC_URL}/images/Vector Dropdown.svg`}
                           alt="Arrowright"
-                          className="h-[24px]"
+                          className="h-[12px] lg:h-[24px]"
                         />
                       </div>
                     )}

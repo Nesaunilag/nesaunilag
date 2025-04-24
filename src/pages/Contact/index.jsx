@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Heading, Img, Button } from "../../components";
+import { Heading, Img, Button, Text } from "../../components";
 import UserProfile3 from "../../components/UserProfile3";
 import { Link } from "react-router-dom"; // Import Link
 import "./style.css";
@@ -8,16 +8,16 @@ import { image } from "framer-motion/client";
 
 
 const data = [
-  { emailLabel: "Email", emailAddress: "Nesaunilagblog@gmail.com", icon: "/images/svg/email.svg" }, 
-  { emailLabel: "Call", emailAddress: "+2347066163148", icon: "/images/svg/call.svg" },
+  { emailLabel: "Email", emailAddress: "Nesa.lagos@gmail.com", icon: "/images/svg/email.svg" }, 
+  { emailLabel: "Call", emailAddress: "+234 904 844 9412", icon: "/images/svg/call.svg" },
   {
     emailLabel: "",
     emailAddress: "",
     socials: [
-      { name: "whatsapp", icon: "/images/svg/whatsapp.svg", url: "https://wa.me/2347066163148" },
-      { name: "instagram", icon: "/images/svg/instagram.svg", url: "https://instagram.com/nesaunilag" },
-      { name: "twitter", icon: "/images/svg/twitter.svg", url: "https://twitter.com/nesaunilag" },
-      { name: "linkedin", icon: "/images/svg/linkedin.svg", url: "https://linkedin.com/in/nesaunilag" },
+      { name: "whatsapp", icon: "/images/svg/whatsapp.svg", url: "https://wa.me/2349048449412" },
+      { name: "instagram", icon: "/images/svg/instagram.svg", url: "https://instagram.com/unilag_nesa?igshid=OGQ5ZDc2ODk2ZA==" },
+      { name: "twitter", icon: "/images/svg/twitter.svg", url: "https://x.com/Unilag_NESA" },
+      { name: "linkedin", icon: "/images/svg/linkedin.svg", url: "https://www.linkedin.com/company/nesaunilag/about/" },
       { name: "tiktok", icon: "/images/svg/tiktok.svg", url: "https://tiktok.com/@nesaunilag" },
       { name: "youtube", icon: "/images/svg/youtube.svg", url: "https://youtube.com/@nesaunilag" },
     ],
@@ -83,11 +83,11 @@ export default function Contact() {
       
         <div className="flex flex-col items-center self-stretch">
           <div className="container-sm flex flex-col items-start gap-7 px-4 md:px-5">
-            <Heading 
+            <Text 
               as="h2"
-              className="font-['Neue_Haas_Grotesk_Text_Pro'] text-[28px] font-medium text-[#000000] md:text-[44px] sm:text-[38px]">
+              className="font-['Neue_Haas_Grotesk_Text_Pro'] text-[20px] font-semibold text-[#000000] md:text-[44px] sm:text-[32px]">
               SEND A MESSAGE
-            </Heading>
+            </Text>
             <div className="flex flex-col items-start gap-[30px] self-stretch">
               <div className="flex flex-col gap-5 self-stretch">
               <form action="https://formsubmit.co/Nesa.lagos@gmail.com" method="POST" className="space-y-4">

@@ -36,10 +36,7 @@ const ProjectRoutes = () => {
             path: '/blog/:id',
             element: <BlogPost />,
         },
-        {
-            path: '/events',
-            element: <EventsPage />,
-        },
+        
         {
             path: '/gallery',
             element: <Gallery />,

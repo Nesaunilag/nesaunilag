@@ -33,8 +33,8 @@ export default function Footer({ ...props }) {
           <div className="hidden lg:flex justify-center items-center flex-wrap gap-6 md:gap-10">
             <Link to="/"><Text className="text-white text-[10px] font-bold">Home</Text></Link>
             <Link to="/about"><Text className="text-white text-[10px]">About</Text></Link>
-            <Link to="/events"><Text className="text-white text-[10px]">Events</Text></Link>
-            <Link to="/news-and-blog"><Text className="text-white text-[10px]">News and Blog</Text></Link>
+            <Link to="/event"><Text className="text-white text-[10px]">Events</Text></Link>
+            <Link to="/newsblogs"><Text className="text-white text-[10px]">News and Blog</Text></Link>
             <Link to="/contact"><Text className="text-white text-[10px]">Contact Us</Text></Link>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function Footer({ ...props }) {
         <div className="w-full h-px bg-white my-6" />
 
         <div className="flex flex-row">
-        <div className="flex lg:hidden flex-col justify-center items-start flex-wrap gap-6 md:gap-10">
+        <div className="flex w-full lg:hidden flex-col justify-center items-start flex-wrap gap-6 md:gap-10">
             <Link to="/">
             <Text className="text-white text-[14px] font-bold">
               <img
@@ -51,19 +51,21 @@ export default function Footer({ ...props }) {
             alt="Vector"
             src="https://c.animaapp.com/WzNSGM6X/img/vector-116.svg"
           />&nbsp;Home</Text></Link>
+
             <Link to="/about"><Text className="text-white text-[14px]">
               <img
             className="w-1 h-[13px]"
             alt="Vector"
             src="https://c.animaapp.com/WzNSGM6X/img/vector-116.svg"
           />&nbsp;About</Text></Link>
-            <Link to="/events"><Text className="text-white text-[14px]">
+
+            <Link to="/event"><Text className="text-white text-[14px]">
               <img
             className="w-1 h-[13px]"
             alt="Vector"
             src="https://c.animaapp.com/WzNSGM6X/img/vector-116.svg"
           />&nbsp;Events</Text></Link>
-            <Link to="/news-and-blog"><Text className="text-white text-[14px]">
+            <Link to="/newsblogs"><Text className="text-white text-[14px]">
               <img
             className="w-1 h-[13px]"
             alt="Vector"
@@ -81,16 +83,19 @@ export default function Footer({ ...props }) {
         <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-[1200px] mx-auto gap-6">
           {/* Portals Links */}
           <div className="flex flex-col lg:flex-row gap-6">
-            <a href="https://studentportal.unilag.edu.ng/login"><Text className="text-white text-[19px]">Student Portal 
+            <a href="https://studentportal.unilag.edu.ng/login">
+            <Text className="text-white text-[14px] lg:text-[20px]">Student Portal 
             &nbsp;
               <img
             className="w-1 h-[13px]"
             alt="Vector"
             src="https://c.animaapp.com/WzNSGM6X/img/vector-116.svg"
-          /></Text></a>
+          />
+          </Text></a>
 
 
-            <a href="https://unilag.edu.ng/"><Text className="text-white text-[19px]">UNILAG Portal 
+            <a href="https://unilag.edu.ng/">
+            <Text className="text-white text-[14px] lg:text-[20px]">UNILAG Portal 
             &nbsp;
               <img
             className="w-1 h-[13px]"
@@ -101,7 +106,7 @@ export default function Footer({ ...props }) {
 
           {/* Social Media Icons (example with placeholder image) */}
          <div className="hidden lg:flex items-center gap-4 justify-center">
-         <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+         <a href="https://wa.me/2349048449412" target="_blank" rel="noopener noreferrer">
             <img
               className="h-8"
               alt="Frame"
@@ -109,7 +114,7 @@ export default function Footer({ ...props }) {
             />
           </a>
 
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://instagram.com/unilag_nesa?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer">
             <img
               className="h-8"
               alt="Frame"
@@ -118,7 +123,7 @@ export default function Footer({ ...props }) {
           </a>
           
 
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/Unilag_NESA" target="_blank" rel="noopener noreferrer">
             <img
               className="h-8"
               alt="Frame"
@@ -128,7 +133,7 @@ export default function Footer({ ...props }) {
 
 
 
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/nesaunilag/about/" target="_blank" rel="noopener noreferrer">
             <img
               className="h-8"
               alt="Frame"
@@ -170,7 +175,7 @@ export default function Footer({ ...props }) {
          {/* Social Media Icons (example with placeholder image) */}
          <div className="pt-4 flex px-1 flex-row lg:hidden items-center gap-1 justify-center">
           
-          <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/2349048449412" target="_blank" rel="noopener noreferrer">
             <img
               className="h-8"
               alt="Frame"
@@ -178,7 +183,7 @@ export default function Footer({ ...props }) {
             />
           </a>
 
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://instagram.com/unilag_nesa?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer">
             <img
               className="h-8"
               alt="Frame"
@@ -187,7 +192,7 @@ export default function Footer({ ...props }) {
           </a>
           
 
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/Unilag_NESA" target="_blank" rel="noopener noreferrer">
             <img
               className="h-8"
               alt="Frame"
@@ -197,7 +202,7 @@ export default function Footer({ ...props }) {
 
 
 
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/nesaunilag/about/" target="_blank" rel="noopener noreferrer">
             <img
               className="h-8"
               alt="Frame"

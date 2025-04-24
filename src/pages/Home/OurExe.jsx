@@ -128,10 +128,10 @@ export default function OurExe() {
 
   return (
     <div className="w-full relative bg-white h-[742px] overflow-hidden text-center text-[48px] text-black font-open-sans">
-      <div className="flex flex-row justify-between py-16 px-8">
-        <div className="items-center justify-center text-left text-[24px] lg:text-[24px] xl:text-[48px] font-neue-haas-grotesk-text-pro">Our Executives</div>
+      <div className="flex flex-row justify-between py-16 px-4 lg:px-8">
+        <div className="items-center justify-center text-left font-bold lg:font-normal text-[24px] lg:text-[24px] xl:text-[48px] font-neue-haas-grotesk-text-pro">Our Executives</div>
         <div className="flex flex-row items-center justify-start gap-2.5 text-xl text-chocolate">
-            <Link to="/executives" className="font-sans text-chocolate text-[24px]">View all</Link>
+            <Link to="/executives" className="font-sans text-chocolate text-[12px] lg:text-[24px]">View all</Link>
             <img className="w-1.5 relative h-3" alt="" src="Vector.svg" />
           </div>
       </div>

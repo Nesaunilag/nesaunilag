@@ -11,7 +11,7 @@ export default function MegaMenu2() {
           <div className="flex flex-col items-start gap-4 sm:gap-4">
             <Text className="text-[18px] font-bold text-[#000000] sm:text-[15px]">Upcoming Events</Text>
             <div className="flex flex-col items-start gap-3 sm:gap-3">
-              <Link to="/events" className="sm:text-[13px]">
+              <Link to="/event" className="sm:text-[13px]">
                 <Text className="text-[16px] font-normal text-[#656d76]">All Events</Text>
               </Link>
               <Link to="/executives" className="sm:text-[13px]">

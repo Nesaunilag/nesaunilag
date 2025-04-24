@@ -140,16 +140,16 @@ export default function Highlights() {
       <div className="space-y-8">
       {blogPosts.map((post) => (
         <div key={post.id} className="flex flex-row bg-[#fffbf6] shadow-lg p-6">
-          <div className="flex-grow">
-            <p className="text-[20px] lg:text-[30px] font-normal text-black mb-4">{post.title}</p>
+          <div className="flex-grow max-w-[70%] lg:max-w-full">
+            <p className="text-[20px] lg:text-[32px] font-normal text-black mb-4">{post.title}</p>
             <Link to={`/blog/${post.id}`} className="text-xl italic text-[#03045e]">
               Read More...
             </Link>
           </div>
-          <div className="w-[100px] h-[80px] lg:w-[200px] lg:h-[150px] bg-[#d97213] flex items-center justify-center text-white">
+          <div className="w-[90px] h-[80px] lg:w-[200px] lg:h-[150px] bg-[#d97213] flex items-center justify-center text-white">
             <div>
-              <div className="text-3xl lg:text-5xl font-medium">{post.dateCreated?.split("-")[2]}</div>
-              <div className="text-2xl">
+              <div className="text-[20px] lg:text-[48px] font-medium">{post.dateCreated?.split("-")[2]}</div>
+              <div className="text-[14px] lg:text-[24px]">
                 {new Date(post.dateCreated).toLocaleString("default", { month: "short" })}
               </div>
             </div>

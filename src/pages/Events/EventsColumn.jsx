@@ -1,4 +1,4 @@
-import { Heading } from "../../components";
+import { Heading, Text } from "../../components";
 import ExpeditionConference from "../../components/ExpeditionConference";
 import React from "react";
 
@@ -6,9 +6,9 @@ export default function Desktop11Column() {
   return (
     <div className="flex flex-col items-center">
       <div className="container-sm flex flex-col items-start gap-[30px] px-5">
-        <Heading as="h2" className="text-[48px] font-medium md:text-[44px] sm:text-[38px]">
+        <Text as="h2" className="text-[20px] font-semibold md:text-[44px] sm:text-[38px]">
           Upcoming Events
-        </Heading>
+        </Text>
         <div className="flex flex-col gap-[30px] self-stretch">
           <ExpeditionConference
             conferenceTitle="NESA SPORT FESTIVAL"

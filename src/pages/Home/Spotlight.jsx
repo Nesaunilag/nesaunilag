@@ -73,19 +73,19 @@ export default function Spotlight() {
           <p className="text-xl text-black [font-family:'Open_Sans',Helvetica]">
             <span className="font-semibold">Name:</span> Samuel Aribigbola (Dunyola)
           </p>
-          <p className="text-xl text-black">
+          <p className="text-xl text-black leading-5">
             <span className="font-semibold">Year of study:</span> Penultimate (Yr 3), Economics
           </p>
-          <p className="text-xl text-black">
+          <p className="text-xl text-black leading-5">
             <span className="font-semibold">Bio:</span> Samuel is a third-year Economics student at UNILAG, with a passion for Programming. He has consistently excelled in his work outside of school activities, setting a high standard for his peers.
           </p>
-          <p className="text-xl text-black">
+          <p className="text-xl text-black leading-5">
             <span className="font-semibold">Goals and Aspirations:</span> Samuel aspires to work in the Economic/Financial sector and to make a lasting impact on Nigeria’s fiscal policies through tech.
           </p>
-          <p className="text-xl text-black">
+          <p className="text-xl text-black leading-5">
             <span className="font-semibold">Interests:</span> Programming, Basketball, Anime, Video Games
           </p>
-          <p className="text-xl text-black">
+          <p className="text-xl text-black leading-5">
             <span className="font-semibold">Favourite quote:</span> “I want to be able to see myself as a child again and tell that little wisher all his wishes came true.”
           </p>
         </div>

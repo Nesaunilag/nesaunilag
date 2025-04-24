@@ -21,7 +21,7 @@ export default function UserProfile2({
         <Text
           size="text4x1"
           as="p"
-          className="w-full !font-['Neue_Haas_Grotesk_Text_Pro'] text-[32px] font-normal leading-10"
+          className="w-full !font-['Neue_Haas_Grotesk_Text_Pro'] text-[14px] lg:text-[32px] font-normal leading-10"
         >
           {eventTitle}
         </Text>
